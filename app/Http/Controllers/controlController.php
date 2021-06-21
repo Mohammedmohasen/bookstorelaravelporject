@@ -69,9 +69,6 @@ class controlController extends Controller
             case 'loginForm':
                 return app('App\Http\Controllers\login\loginController')->authenticate($request);
                 break;
-            case 'add-author-form':
-                return (new login\signupcontroller)->store($request);
-                break;
                 case 'add-author-form':
                      return (new authorController)->store($request);
             default:

@@ -37,8 +37,8 @@ class authorController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'Name' => ['required', 'min:5'],
-            'Age' => ['required', 'digits_between:2,5'],
+            'Name' => ['required', 'min:5','max:20'],
+            'Age' => ['required','numeric','min:18'],
             'Email' => ['required', 'min:8', 'email'],
 
         ]);
@@ -47,11 +47,12 @@ class authorController extends Controller
         $author->name= $request->input('Name');
         $author->email = $request->input('Email');
         $author->BookBNumber = 0;
-        $author->state = $request->input('Email');
+        $author->state = $request->has('State');
+        $author->age = $request->input('Age');
 
         $author->save();
-        return view('login\pages-login');
-
+        return redirect()->back()->with('success','succes create author : '.$request->input('Name')) ;
+         
     }
 
     /**
