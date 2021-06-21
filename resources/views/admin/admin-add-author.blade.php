@@ -16,10 +16,12 @@
       <link rel="stylesheet" href="{{ asset('admin/css/style.css') }}">
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="{{ asset('admin/css/responsive.css') }}">
+      
+        <link rel="stylesheet" href="{{ asset('admin/css/remixicon.css') }}">
    </head>
    <body>
       <!-- loader Start -->
-      <div id="loading">
+      <div>
          <div id="loading-center">
          </div>
       </div>
@@ -66,90 +68,10 @@
                            <li><a href="admin-books.html"><i class="ri-file-pdf-line"></i>Books</a></li>
                         </ul>
                      </li>
-                     <li>
-                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>User</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                        <ul id="userinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
-                           <li><a href="profile.html"><i class="las la-id-card-alt"></i>User Profile</a></li>
-                           <li><a href="profile-edit.html"><i class="las la-edit"></i>User Edit</a></li>
-                           <li><a href="add-user.html"><i class="las la-plus-circle"></i>User Add</a></li>
-                           <li><a href="user-list.html"><i class="las la-th-list"></i>User List</a></li>
-                        </ul>
-                     </li>
-                     <li>
-                        <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="lab la-elementor iq-arrow-left"></i><span>UI Elements</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                        <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                           <li class="elements">
-                              <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>UI Kit</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="sub-menu" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="ui-colors.html"><i class="las la-palette"></i>colors</a></li>
-                                 <li><a href="ui-typography.html"><i class="las la-keyboard"></i>Typography</a></li>
-                                 <li><a href="ui-alerts.html"><i class="las la-tag"></i>Alerts</a></li>
-                                 <li><a href="ui-badges.html"><i class="lab la-atlassian"></i>Badges</a></li>
-                                 <li><a href="ui-breadcrumb.html"><i class="las la-bars"></i>Breadcrumb</a></li>
-                                 <li><a href="ui-buttons.html"><i class="las la-tablet"></i>Buttons</a></li>
-                                 <li><a href="ui-cards.html"><i class="las la-credit-card"></i>Cards</a></li>
-                                 <li><a href="ui-carousel.html"><i class="las la-film"></i>Carousel</a></li>
-                                 <li><a href="ui-embed-video.html"><i class="las la-video"></i>Video</a></li>
-                                 <li><a href="ui-grid.html"><i class="las la-border-all"></i>Grid</a></li>
-                                 <li><a href="ui-images.html"><i class="las la-images"></i>Images</a></li>
-                                 <li><a href="ui-list-group.html"><i class="las la-list"></i>list Group</a></li>
-                                 <li><a href="ui-media-object.html"><i class="las la-ad"></i>Media</a></li>
-                                 <li><a href="ui-modal.html"><i class="las la-columns"></i>Modal</a></li>
-                                 <li><a href="ui-notifications.html"><i class="las la-bell"></i>Notifications</a></li>
-                                 <li><a href="ui-pagination.html"><i class="las la-ellipsis-h"></i>Pagination</a></li>
-                                 <li><a href="ui-popovers.html"><i class="las la-eraser"></i>Popovers</a></li>
-                                 <li><a href="ui-progressbars.html"><i class="las la-hdd"></i>Progressbars</a></li>
-                                 <li><a href="ui-tabs.html"><i class="las la-database"></i>Tabs</a></li>
-                                 <li><a href="ui-tooltips.html"><i class="las la-magnet"></i>Tooltips</a></li>
-                              </ul>
-                           </li>
-                           <li class="form">
-                              <a href="#forms" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="lab la-wpforms"></i><span>Forms</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="forms" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="form-layout.html"><i class="las la-book"></i>Form Elements</a></li>
-                                 <li><a href="form-validation.html"><i class="las la-edit"></i>Form Validation</a></li>
-                                 <li><a href="form-switch.html"><i class="las la-toggle-off"></i>Form Switch</a></li>
-                                 <li><a href="form-chechbox.html"><i class="las la-check-square"></i>Form Checkbox</a></li>
-                                 <li><a href="form-radio.html"><i class="ri-radio-button-line"></i>Form Radio</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="#wizard-form" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-archive-drawer-line"></i><span>Forms Wizard</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="wizard-form" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="form-wizard.html"><i class="ri-clockwise-line"></i>Simple Wizard</a></li>
-                                 <li><a href="form-wizard-validate.html"><i class="ri-clockwise-2-line"></i>Validate Wizard</a></li>
-                                 <li><a href="form-wizard-vertical.html"><i class="ri-anticlockwise-line"></i>Vertical Wizard</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="#tables" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-table-line"></i><span>Table</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="tables" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="tables-basic.html"><i class="ri-table-line"></i>Basic Tables</a></li>
-                                 <li><a href="data-table.html"><i class="ri-database-line"></i>Data Table</a></li>
-                                 <li><a href="table-editable.html"><i class="ri-refund-line"></i>Editable Table</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="#charts" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pie-chart-box-line"></i><span>Charts</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="charts" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="chart-morris.html"><i class="ri-file-chart-line"></i>Morris Chart</a></li>
-                                 <li><a href="chart-high.html"><i class="ri-bar-chart-line"></i>High Charts</a></li>
-                                 <li><a href="chart-am.html"><i class="ri-folder-chart-line"></i>Am Charts</a></li>
-                                 <li><a href="chart-apex.html"><i class="ri-folder-chart-2-line"></i>Apex Chart</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="#icons" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-list-check"></i><span>Icons</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="icons" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="icon-dripicons.html"><i class="ri-stack-line"></i>Dripicons</a></li>
-                                 <li><a href="icon-fontawesome-5.html"><i class="ri-facebook-fill"></i>Font Awesome 5</a></li>
-                                 <li><a href="icon-lineawesome.html"><i class="ri-keynote-line"></i>line Awesome</a></li>
-                                 <li><a href="icon-remixicon.html"><i class="ri-remixicon-line"></i>Remixicon</a></li>
-                                 <li><a href="icon-unicons.html"><i class="ri-underline"></i>unicons</a></li>
-                              </ul>
-                           </li>
-                        </ul>
-                     </li>
+                  
+                   
+                         
+                         
                      <li>
                         <a href="#pages" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="las la-file-alt iq-arrow-left"></i><span>Pages</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                         <ul id="pages" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
@@ -207,7 +129,7 @@
                   <div class="iq-card">
                      <div class="iq-card-body">
                         <div class="sidebarbottom-content">
-                           <div class="image"><img src="{{ asset('admin/images/page-img/side-bkg.png') }}" alt=""></div>                           
+                           <div class="image"><img src="{{ asset('admin/images/page-img/side-bkg.png') }}" alt=""></div>
                            <button type="submit" class="btn w-100 btn-primary mt-4 view-more">Become Membership</button>
                         </div>
                      </div>
@@ -225,7 +147,7 @@
                      </div>
                      <div class="iq-navbar-logo d-flex justify-content-between">
                         <a href="index.html" class="header-logo">
-                           <img src="{{ asset('admin/images/logo.png') }}" class="{{ asset('img-fluid rounded-normal') }}" alt="">
+                           <img src="{{ asset('admin/images/logo.png') }}" class='img-fluid rounded-normal' alt="">
                            <div class="logo-title">
                               <span class="text-primary text-uppercase">Booksto</span>
                            </div>
@@ -270,7 +192,7 @@
                                     <a href="#" class="iq-sub-card" >
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{ asset('images/user/01.jpg') }}" alt="">
+                                             <img class="avatar-40 rounded" src="{{ asset('admin/images/user/01.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Emma Watson Barry</h6>
@@ -282,7 +204,7 @@
                                     <a href="#" class="iq-sub-card" >
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{ asset('images/user/02.jpg') }}" alt="">
+                                             <img class="avatar-40 rounded" src="{{ asset('admin/images/user/02.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">New customer is join</h6>
@@ -294,7 +216,7 @@
                                     <a href="#" class="iq-sub-card" >
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{ asset('images/user/03.jpg') }}" alt="">
+                                             <img class="avatar-40 rounded" src="{{ asset('admin/images/user/03.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Two customer is left</h6>
@@ -306,7 +228,7 @@
                                     <a href="#" class="iq-sub-card" >
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{ asset('images/user/04.jpg') }}" alt="">
+                                             <img class="avatar-40 rounded" src="{{ asset('admin/images/user/04.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">New Mail from Fenny</h6>
@@ -333,7 +255,7 @@
                                     <a href="#" class="iq-sub-card">
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{ asset('images/user/01.jpg') }}" alt="">
+                                             <img class="avatar-40 rounded" src="{{ asset('admin/images/user/01.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Barry Emma Watson</h6>
@@ -344,7 +266,7 @@
                                     <a href="#" class="iq-sub-card">
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{ asset('images/user/02.jpg') }}" alt="">
+                                             <img class="avatar-40 rounded" src="{{ asset('admin/images/user/02.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Lorem Ipsum Watson</h6>
@@ -355,7 +277,7 @@
                                     <a href="#" class="iq-sub-card">
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{ asset('images/user/03.jpg') }}" alt="">
+                                             <img class="avatar-40 rounded" src="{{ asset('admin/images/user/03.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Why do we use it?</h6>
@@ -366,7 +288,7 @@
                                     <a href="#" class="iq-sub-card">
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{ asset('images/user/04.jpg') }}" alt="">
+                                             <img class="avatar-40 rounded" src="{{ asset('admin/images/user/04.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Variations Passages</h6>
@@ -377,7 +299,7 @@
                                     <a href="#" class="iq-sub-card">
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="avatar-40 rounded" src="{{ asset('images/user/05.jpg') }}" alt="">
+                                             <img class="avatar-40 rounded" src="{{ asset('admin/images/user/05.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Lorem Ipsum generators</h6>
@@ -403,7 +325,7 @@
                                     <a href="#" class="iq-sub-card">
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="rounded" src="{{ asset('images/cart/01.jpg') }}" alt="">
+                                             <img class="rounded" src="{{ asset('admin/images/cart/01.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Night People book</h6>
@@ -415,7 +337,7 @@
                                     <a href="#" class="iq-sub-card">
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="rounded" src="{{ asset('images/cart/02.jpg') }}" alt="">
+                                             <img class="rounded" src="{{ asset('admin/images/cart/02.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">The Sin Eater Book</h6>
@@ -427,7 +349,7 @@
                                     <a href="#" class="iq-sub-card">
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="rounded" src="{{ asset('images/cart/03.jpg') }}" alt="">
+                                             <img class="rounded" src="{{ asset('admin/images/cart/03.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">the Orange Tree</h6>
@@ -439,7 +361,7 @@
                                     <a href="#" class="iq-sub-card">
                                        <div class="media align-items-center">
                                           <div class="">
-                                             <img class="rounded" src="{{ asset('images/cart/03.jpg') }}" alt="">
+                                             <img class="rounded" src="{{ asset('admin/images/cart/03.jpg') }}" alt="">
                                           </div>
                                           <div class="media-body ml-3">
                                              <h6 class="mb-0 ">Harsh Reality book</h6>
@@ -458,7 +380,7 @@
                         </li>
                         <li class="line-height pt-3">
                            <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
-                              <img src="{{ asset('images/user/1.jpg') }}" class="img-fluid rounded-circle mr-3" alt="user">
+                              <img src="{{ asset('admin/images/user/1.jpg') }}" class="img-fluid rounded-circle mr-3" alt="user">
                               <div class="caption">
                                  <h6 class="mb-1 line-height">Barry Tech</h6>
                                  <p class="mb-0 text-primary">$20.32</p>
@@ -546,10 +468,10 @@
                                  <input type="text" class="form-control">
                               </div>
                               <div class="form-group">
-                                 <label>Author Profile:</label>
+                                 <label>Author Age:</label>
                                  <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="customFile">
-                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                    <input type="number" class="custom-file-input" id="customFile">
+                                 
                                  </div>
                               </div>
                               <div class="form-group">
@@ -557,8 +479,8 @@
                                  <input type="email" class="form-control">
                               </div>
                               <div class="form-group">
-                                 <label>Author Description:</label>
-                                 <textarea class="form-control" rows="4"></textarea>
+                                 <label>Author State:</label>
+                                 <input type="checkbox" class="form-control">
                               </div>
                               <button type="submit" class="btn btn-primary">Submit</button>
                               <button type="reset" class="btn btn-danger">Reset</button>
@@ -624,59 +546,59 @@
       <!-- color-customizer END -->
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="{{ asset('js/jquery.min.js') }}"></script>
-      <script src="{{ asset('js/popper.min.js') }}"></script>
-      <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-      <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
-      <script src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
+      <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
+      <script src="{{ asset('admin/js/popper.min.js') }}"></script>
+      <script src="{{ asset('admin/js/bootstrap.min.js') }}"></script>
+      <script src="{{ asset('admin/js/jquery.dataTables.min.js') }}"></script>
+      <script src="{{ asset('admin/js/dataTables.bootstrap4.min.js') }}"></script>
       <!-- Appear JavaScript -->
-      <script src="{{ asset('js/jquery.appear.js') }}"></script>
+      <script src="{{ asset('admin/js/jquery.appear.js') }}"></script>
       <!-- Countdown JavaScript -->
-      <script src="{{ asset('js/countdown.min.js') }}"></script>
+      <script src="{{ asset('admin/js/countdown.min.js') }}"></script>
       <!-- Counterup JavaScript -->
-      <script src="{{ asset('js/waypoints.min.js') }}"></script>
-      <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+      <script src="{{ asset('admin/js/waypoints.min.js') }}"></script>
+      <script src="{{ asset('admin/js/jquery.counterup.min.js') }}"></script>
       <!-- Wow JavaScript -->
-      <script src="{{ asset('js/wow.min.js') }}"></script>
+      <script src="{{ asset('admin/js/wow.min.js') }}"></script>
       <!-- Apexcharts JavaScript -->
-      <script src="{{ asset('js/apexcharts.js') }}"></script>
+      <script src="{{ asset('admin/js/apexcharts.js') }}"></script>
       <!-- Slick JavaScript -->
-      <script src="{{ asset('js/slick.min.js') }}"></script>
+      <script src="{{ asset('admin/js/slick.min.js') }}"></script>
       <!-- Select2 JavaScript -->
-      <script src="{{ asset('js/select2.min.js') }}"></script>
+      <script src="{{ asset('admin/js/select2.min.js') }}"></script>
       <!-- Owl Carousel JavaScript -->
-      <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+      <script src="{{ asset('admin/js/owl.carousel.min.js') }}"></script>
       <!-- Magnific Popup JavaScript -->
-      <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+      <script src="{{ asset('admin/js/jquery.magnific-popup.min.js') }}"></script>
       <!-- Smooth Scrollbar JavaScript -->
-      <script src="{{ asset('js/smooth-scrollbar.js') }}"></script>
+      <script src="{{ asset('admin/js/smooth-scrollbar.js') }}"></script>
       <!-- lottie JavaScript -->
-      <script src="{{ asset('js/lottie.js') }}"></script>
+      <script src="{{ asset('admin/js/lottie.js') }}"></script>
       <!-- am core JavaScript -->
-      <script src="{{ asset('js/core.js') }}"></script>
+      <script src="{{ asset('admin/js/core.js') }}"></script>
       <!-- am charts JavaScript -->
-      <script src="{{ asset('js/charts.js') }}"></script>
+      <script src="{{ asset('admin/js/charts.js') }}"></script>
       <!-- am animated JavaScript -->
-      <script src="{{ asset('js/animated.js') }}"></script>
+      <script src="{{ asset('admin/js/animated.js') }}"></script>
       <!-- am kelly JavaScript -->
-      <script src="{{ asset('js/kelly.js') }}"></script>
+      <script src="{{ asset('admin/js/kelly.js') }}"></script>
       <!-- am maps JavaScript -->
-      <script src="{{ asset('js/maps.js') }}"></script>
+      <script src="{{ asset('admin/js/maps.js') }}"></script>
       <!-- am worldLow JavaScript -->
-      <script src="{{ asset('js/worldLow.js') }}"></script>
+      <script src="{{ asset('admin/js/worldLow.js') }}"></script>
       <!-- Raphael-min JavaScript -->
-      <script src="{{ asset('js/raphael-min.js') }}"></script>
+      <script src="{{ asset('admin/js/raphael-min.js') }}"></script>
       <!-- Morris JavaScript -->
-      <script src="{{ asset('js/morris.js') }}"></script>
+      <script src="{{ asset('admin/js/morris.js') }}"></script>
       <!-- Morris min JavaScript -->
-      <script src="{{ asset('js/morris.min.js') }}"></script>
+      <script src="{{ asset('admin/js/morris.min.js') }}"></script>
       <!-- Flatpicker Js -->
-      <script src="{{ asset('js/flatpickr.js') }}"></script>
+      <script src="{{ asset('admin/js/flatpickr.js') }}"></script>
       <!-- Style Customizer -->
-      <script src="{{ asset('js/style-customizer.js') }}"></script>
+      <script src="{{ asset('admin/js/style-customizer.js') }}"></script>
       <!-- Chart Custom JavaScript -->
-      <script src="{{ asset('js/chart-custom.js') }}"></script>
+      <script src="{{ asset('admin/js/chart-custom.js') }}"></script>
       <!-- Custom JavaScript -->
-      <script src="{{ asset('js/custom.js') }}"></script>
+      <script src="{{ asset('admin/js/custom.js') }}"></script>
    </body>
 </html>

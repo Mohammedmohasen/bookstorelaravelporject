@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//get route we are put it here for more regular code and the right thing in the laravel put the  gt code before the resource route 
+//get route we are put it here for more regular code and the right thing in the laravel put the  gt code before the resource route
 Route::get('index', function () {
-    return view('customer.index');
+    return view('admin.admin-add-author');
 });
 
 
