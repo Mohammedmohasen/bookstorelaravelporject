@@ -92,17 +92,18 @@
                            </div>
                         </div>
                         <div class="iq-card-body">
-                           <form action="admin-author.html">
+                           <form action="">
+                               <input type="hidden" name="requestName" value="add-author-form"/>
                               <div class="form-group">
                                  <label>Author Name:</label>
                                  <input type="text" class="form-control">
                               </div>
                               <div class="form-group">
                                  <label>Author Age:</label>
-                                 <div class="custom-file">
-                                    <input type="number" class="custom-file-input" id="customFile">
 
-                                 </div>
+                                    <input type="number" class="form-control">
+
+
                               </div>
                               <div class="form-group">
                                  <label>Author Email:</label>

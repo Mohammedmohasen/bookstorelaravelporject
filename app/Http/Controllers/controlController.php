@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\login\loginController;
 use App\Http\Controllers\login\signupcontroller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 class controlController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     */   
+     */
     public function index()
     {
         $url = url()->current();
@@ -30,7 +29,12 @@ class controlController extends Controller
             case $http . '/signup':
                 return view('login.pages-register-boxed');
                 break;
-                
+            case $http . '/index':
+                return view('customer.home-page.index');
+                break;
+            case $http . '/book':
+                return view('customer.home-page.book');
+                break;
             default:
                 return $url;
                 break;
@@ -61,15 +65,18 @@ class controlController extends Controller
             case 'register':
                 return (new login\signupcontroller)->store($request);
                 break;
-                
+
             case 'loginForm':
                 //Route::post('myroute', 'loginController@authenticate');
                 return app('App\Http\Controllers\login\loginController')->authenticate($request);
                 break;
+            case 'add-author-form':
+                return (new login\signupcontroller)->store($request);
+                break;
             default:
-            
-               return redirect()->back();  
-            break;
+
+                return redirect()->back();
+                break;
         }
 
     }
@@ -85,8 +92,6 @@ class controlController extends Controller
 
     }
 
-    
-    
     /**
      * Show the form for editing the specified resource.
      *
@@ -120,5 +125,5 @@ class controlController extends Controller
     {
         //
     }
-    
+
 }
