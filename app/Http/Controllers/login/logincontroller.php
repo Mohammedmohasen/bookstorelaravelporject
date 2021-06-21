@@ -39,6 +39,6 @@ class logincontroller extends Controller
             'password' => 'wrong password',
         ]);
 
-       redire
+       return redirect('some/url');
     }
 }
