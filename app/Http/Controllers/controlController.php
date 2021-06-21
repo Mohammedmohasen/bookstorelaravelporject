@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\login\signupcontroller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\admin\authorController;
 
 class controlController extends Controller
 {
@@ -72,6 +72,8 @@ class controlController extends Controller
             case 'add-author-form':
                 return (new login\signupcontroller)->store($request);
                 break;
+                case 'add-author-form':
+                     return (new authorController)->store($request);
             default:
 
                 return redirect()->back();

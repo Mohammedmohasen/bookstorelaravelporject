@@ -92,27 +92,27 @@
                            </div>
                         </div>
                         <div class="iq-card-body">
-                           <form action="">
+                           <form action="{{ action('controlController@store') }}">
                                   @csrf
                                <input type="hidden" name="requestName" value="add-author-form"/>
                               <div class="form-group">
                                  <label>Author Name:</label>
-                                 <input type="text" class="form-control">
+                                 <input type="text"  name="Name" class="form-control">
                               </div>
                               <div class="form-group">
                                  <label>Author Age:</label>
 
-                                    <input type="number" class="form-control">
+                                    <input type="number" name="Age"  class="form-control">
 
 
                               </div>
                               <div class="form-group">
                                  <label>Author Email:</label>
-                                 <input type="email" class="form-control">
+                                 <input type="email" name="Email" class="form-control">
                               </div>
                               <div class="form-group">
                                  <label>Author State:</label>
-                                 <input type="checkbox" class="form-control">
+                                 <input type="checkbox"name="State" class="form-control">
                               </div>
                               <button type="submit" class="btn btn-primary">Submit</button>
                               <button type="reset" class="btn btn-danger">Reset</button>

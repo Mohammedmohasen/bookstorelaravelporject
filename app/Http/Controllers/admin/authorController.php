@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\admin\author;
 use Illuminate\Http\Request;
 
 class authorController extends Controller
@@ -35,7 +36,22 @@ class authorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'Name' => ['required', 'min:5'],
+            'Age' => ['required', 'digits_between:2,5'],
+            'Email' => ['required', 'min:8', 'email'],
+
+        ]);
+
+        $author = new author();
+        $author->name= $request->input('Name');
+        $author->email = $request->input('Email');
+        $author->BookBNumber = 0;
+        $author->state = $request->input('Email');
+
+        $author->save();
+        return view('login\pages-login');
+
     }
 
     /**
