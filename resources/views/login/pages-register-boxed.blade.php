@@ -36,8 +36,8 @@
                                             <span>It only takes a <span class="text-success">few seconds</span> to create your account</span>
                                         </h4>
                                     </h5>
-                                     @csrf
-                                    
+                                      
+                                    {{ csrf_field() }}
                                     <div class="divider row"></div>
                                   @include('include.massege')
                                     <div class="form-row">

@@ -27,8 +27,11 @@ class logincontroller extends Controller
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
-        $remeberme = $request->check;
-        if (Auth::attempt($user)) {
+        $remember =$request->has('check');
+        if (Auth::attempt($user,$remember)) {
+        
+
+
             $request->session()->regenerate();
             return view('admin.admin-add-author');
         }

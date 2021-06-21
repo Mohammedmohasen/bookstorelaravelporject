@@ -239,6 +239,7 @@
                   </div>
                   <div class="iq-search-bar">
                      <form action="#" class="searchbox">
+                         @csrf
                         <input type="text" class="text search-input" placeholder="Search Here...">
                         <a class="search-link" href="#"><i class="ri-search-line"></i></a>
                      </form>
@@ -253,6 +254,7 @@
                               <i class="ri-search-line"></i>
                            </a>
                            <form action="#" class="search-box p-0">
+                               @csrf
                               <input type="text" class="text search-input" placeholder="Type here to search...">
                               <a class="search-link" href="#"><i class="ri-search-line"></i></a>
                            </form>
@@ -542,6 +544,7 @@
                         </div>
                         <div class="iq-card-body">
                            <form action="admin-category.html">
+                               @csrf
                               <div class="form-group">
                                  <label>Category Name:</label>
                                  <input type="text" class="form-control">

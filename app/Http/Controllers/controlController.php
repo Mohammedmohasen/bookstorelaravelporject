@@ -67,7 +67,6 @@ class controlController extends Controller
                 break;
 
             case 'loginForm':
-                //Route::post('myroute', 'loginController@authenticate');
                 return app('App\Http\Controllers\login\loginController')->authenticate($request);
                 break;
             case 'add-author-form':

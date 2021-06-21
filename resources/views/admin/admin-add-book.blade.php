@@ -238,6 +238,7 @@
                   </div>
                   <div class="iq-search-bar">
                      <form action="#" class="searchbox">
+                         @csrf
                         <input type="text" class="text search-input" placeholder="Search Here...">
                         <a class="search-link" href="#"><i class="ri-search-line"></i></a>
                      </form>
@@ -541,6 +542,7 @@
                         </div>
                         <div class="iq-card-body">
                            <form action="admin-books.html">
+                               @csrf
                               <div class="form-group">
                                  <label>Book Name:</label>
                                  <input type="text" class="form-control">

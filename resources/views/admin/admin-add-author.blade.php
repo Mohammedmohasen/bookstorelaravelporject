@@ -36,15 +36,15 @@
          <div class="iq-sidebar">
             <div class="iq-sidebar-logo d-flex justify-content-between">
                <a href="index.html" class="header-logo">
-                  <img src="{{ asset('admin/images/logo.png') }}" class="img-fluid rounded-normal" alt="">
+                  <img class="img-fluid rounded-normal" alt="">
                   <div class="logo-title">
-                     <span class="text-primary text-uppercase">Booksto</span>
+                     <span class="text-primary text-uppercase"></span>
                   </div>
                </a>
                <div class="iq-menu-bt-sidebar">
                   <div class="iq-menu-bt align-self-center">
                      <div class="wrapper-menu">
-                        <div class="main-circle"><i class="las la-bars"></i></div>
+                        <div class="main-circle"></div>
                      </div>
                   </div>
                </div>
@@ -53,7 +53,7 @@
                <nav class="iq-sidebar-menu">
                   <ul id="iq-sidebar-toggle" class="iq-menu">
                      <li>
-                        <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Shop</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Shop</span></i></a>
                         <ul id="dashboard" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                            <li><a href="index.html"><i class="las la-house-damage"></i>BOOKS</a></li>
                            <li><a href="category.html"><i class="ri-function-line"></i>Category</a></li>
@@ -64,7 +64,7 @@
                         </ul>
                      </li>
                      <li class="active active-menu">
-                        <a href="#admin" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Admin</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <a href="#admin" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Admin</span></i></a>
                         <ul id="admin" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
                            <li><a href="admin-dashboard.html"><i class="las la-house-damage"></i>ADD publishing house</a></li>
                            <li><a href="admin-category.html"><i class="ri-function-line"></i>ADD Books Category</a></li>
@@ -93,6 +93,7 @@
                         </div>
                         <div class="iq-card-body">
                            <form action="">
+                                  @csrf
                                <input type="hidden" name="requestName" value="add-author-form"/>
                               <div class="form-group">
                                  <label>Author Name:</label>

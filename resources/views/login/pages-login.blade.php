@@ -72,7 +72,7 @@
                                    <form method="POST" action="{{ action('controlController@store') }}">
                                       <input type="hidden" name="requestName" value="loginForm"/>
                                     @include('include.massege')
-                                    {{ csrf_field() }}
+                                     @csrf
                                
                                     <div class="form-row">
                                         <div class="col-md-6">
