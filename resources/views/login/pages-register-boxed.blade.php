@@ -62,7 +62,7 @@
                                     <div class="divider row"></div>
                                     <h6 class="mb-0">Already have an account? 
                                      
-                                        <a name="signin" href="{{ route('login') }}" class="text-primary">Sign in</a> | <a href="{{ route('recover') }}" class="text-primary">Recover Password</a>
+                                        <a name="signin" href="{{ route('login') }}" class="text-primary">Sign in</a> | 
                                     </h6>
                                 </div>
                                 <div class="modal-footer d-block text-center">

@@ -95,7 +95,7 @@
                                     <div class="divider row"></div>
                                     <div class="d-flex align-items-center">
                                         <div class="ml-auto">
-                                            <a href="{{ route('recover') }}" class="btn-lg btn btn-link">Recover Password</a>
+                                          
                                             <input type="submit" class="btn btn-primary btn-lg" value="go to Dashboard"/>
                                         </div>
                                     </div>

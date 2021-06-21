@@ -30,8 +30,7 @@ class logincontroller extends Controller
         $remeberme = $request->check;
         if (Auth::attempt($user)) {
             $request->session()->regenerate();
-            Auth::login($user, $remeberme);
-            return view('login\pages-forgot-password');
+            return view('admin.admin-books');
         }
 
         return back()->withErrors([
@@ -39,6 +38,6 @@ class logincontroller extends Controller
             'password' => 'wrong password',
         ]);
 
-       return redirect('some/url');
+       return redirect()->back();
     }
 }
