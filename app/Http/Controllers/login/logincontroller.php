@@ -30,7 +30,7 @@ class logincontroller extends Controller
         $remeberme = $request->check;
         if (Auth::attempt($user)) {
             $request->session()->regenerate();
-            return view('admin.admin-books');
+            return view('admin.admin-add-author');
         }
 
         return back()->withErrors([
