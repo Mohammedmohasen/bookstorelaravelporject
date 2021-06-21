@@ -73,7 +73,7 @@ class controlController extends Controller
                      return (new authorController)->store($request);
             default:
 
-                return redirect()->back();
+              
                 break;
         }
 

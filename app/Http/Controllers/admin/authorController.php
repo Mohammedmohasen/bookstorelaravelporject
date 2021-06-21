@@ -39,7 +39,7 @@ class authorController extends Controller
         $this->validate($request, [
             'Name' => ['required', 'min:5','max:20'],
             'Age' => ['required','numeric','min:18'],
-            'Email' => ['required', 'min:8', 'email'],
+            'Email' => ['required', 'min:8', 'email']
 
         ]);
 
@@ -51,7 +51,7 @@ class authorController extends Controller
         $author->age = $request->input('Age');
 
         $author->save();
-        return redirect()->back()->with('success','succes create author : '.$request->input('Name')) ;
+        return view('admin.admin-add-author')->with('success','succes create author : '.$request->input('Name')) ;
          
     }
 
