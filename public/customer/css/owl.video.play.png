@@ -1,0 +1,1364 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title> Premium HTML Website Templates & WordPress Themes | Template Bundle</title>
+	<meta content="" property="og:title">
+	<meta content="website" property="og:type">
+	<meta content="https://templatebundle.net/" property="og:url">
+	<meta content="https://templatebundle.net/webimage/logo.png" property="og:image">
+	<meta content="https://templatebundle.net/webimage/logo.png" property="og:image:url">
+	
+	<meta content="Template Bundle is the best marketplace for HTML website templates and WordPress Themes. With over 100+ finest HTML Web Templates and 300+ WordPress Themes on various niches, you can reach your multiple website needs and boost your business and career online." property="og:description">
+	<meta content="Template Bundle" property="og:site_name">
+	<meta name="description"  content="Template Bundle is the best marketplace for HTML website templates and WordPress Themes. With over 100+ finest HTML Web Templates and 300+ WordPress Themes on various niches, you can reach your multiple website needs and boost your business and career online."/>
+	<meta name="keywords" content="Premium WordPress Themes, HTML Template, HTML, Website Templates, Web Templates, Free CSS Templates, CSS Website Templates, Templates, Free Templates, Free HTML Template, WordPress Templates, Download WordPress Themes">
+	<meta name="author" content="Kamleshyadav"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta name="MobileOptimized" content="320">
+	<!-- Pinterest code -->
+	<meta name="p:domain_verify" content="4a959c13a277c248713ad52f0b7f9e96"/>
+	<!-- Pinterest code -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="https://templatebundle.net/webimage/favicon.png" />
+	<!-- stylesheet start -->
+	<link href="https://templatebundle.net/themes/tbundle/css/layerslider.css" rel="stylesheet">
+	<link href="https://templatebundle.net/themes/tbundle/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="https://templatebundle.net/themes/tbundle/css/toastr.css" rel="stylesheet">
+	<link href="https://templatebundle.net/themes/themeone/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/nice-select.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/fonts.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/style.css" rel="stylesheet" type="text/css"/>
+	<!-- stylesheet end -->
+	
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '593962751246120');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=593962751246120&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35935151-37"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-35935151-37');
+</script>
+<!-- END Global site tag (gtag.js) - Google Analytics -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35935151-37"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-35935151-37');
+</script>
+
+<!-- Hotjar Tracking Code for TEMPLATEBUNDLE.NET -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1833794,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+</head>
+<body class="  " >
+<input type="hidden" value="https://templatebundle.net/" id="base_url">
+
+<div class="loader">
+    <div class="spinner">
+      
+      <img src="https://templatebundle.net/webimage/loader.gif" alt=""/>
+    </div>
+</div>
+
+<div class="ts_message_popup">
+  <p class="ts_message_popup_text">
+  </p>
+</div>
+<!--Message Popup End-->
+  <!-- <a href="https://templatebundle.net/home/deals" target="_blank"><img src="http://kamleshyadav.com/salespageimagesthemeforest/common/patti.gif" alt="Black friday" width="100%"></a>-->
+   <div class="tb_header ">
+
+
+<div class="tb_header_section">
+		<div class="tb_header_main">
+			<div class="tb_header">
+				<div class="row">
+					<div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
+						<div class="tb_logo">
+						    <a href="https://templatebundle.net/"><img src="https://templatebundle.net/webimage/logo.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-xl-5 col-lg-1 col-md-1 col-sm-12">
+						<div class="tb_nav_menu">
+							<ul>
+								<li>
+									<a href="https://templatebundle.net/" class="active">
+									<span class="shape_one">
+										<svg 
+										 xmlns="http://www.w3.org/2000/svg"
+										 xmlns:xlink="http://www.w3.org/1999/xlink"
+										 width="15px" height="14px">
+										<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+										 d="M15.000,-0.000 C15.000,-0.000 13.146,14.000 -0.000,14.000 L15.000,14.000 L15.000,-0.000 Z"/>
+										</svg>
+									</span>
+									Template Bundle
+									<span class="shape_two"><svg 
+										 xmlns="http://www.w3.org/2000/svg"
+										 xmlns:xlink="http://www.w3.org/1999/xlink"
+										 width="15px" height="14px">
+										<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+										 d="M-0.000,-0.000 C-0.000,-0.000 1.854,14.000 15.000,14.000 L-0.000,14.000 L-0.000,-0.000 Z"/>
+									</svg></span>
+									</a>
+								</li>
+								<li><a href="https://graphicsbundle.net/" target="_blank">Graphic Bundle</a></li>
+								<li><a href="http://plrbundle.net/" target="_blank">PLR Bundle</a></li>  
+								<li><a href="https://codebundle.net/" target="_blank">Code Bundle</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-5 col-lg-9 col-md-9 col-sm-12 tb_toggle_right">
+						<div class="tb_toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="tb_nav_menu_right">
+							<ul>
+								<li><a href="https://templatebundle.net/" class="active">home</a></li>
+								<li><a href="https://templatebundle.net/home/deals">Deals</a></li>
+								
+								 								<li><a href="https://templatebundle.net/pricing" >Pricing</a></li>
+								<li><a href="https://templatebundle.net/contact-us">Contact Us</a></li>
+																<li>
+								    
+									<div class="tb_cart_menu">
+										<img src="https://templatebundle.net/themes/themeone/images/cart_logo.png" class="img-fluid" alt=""/> 
+										<a href="https://templatebundle.net/authenticate/login">login </a>
+										<span>/</span>
+										<a href="https://templatebundle.net/authenticate/register">Registration</a>
+									</div>
+								</li>
+															</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<!-- Header end -->
+<!--<div class="image_modal_down">
+	        <a href="javascript:void(0);" class="close_modal">X</a>
+	        <a href="https://templatebundle.net/home/deals" target="_blank"><img Class="img_modal" src="http://kamleshyadav.com/salespageimagesthemeforest/common/popup.gif"></a>
+	    </div>-->
+		
+
+<!-- Newsletter start 
+<div id="newsletter-modal" class="modal fade newsletter-modal" role="dialog">
+  <div class="modal-dialog  modal-dialog-centered">
+	<div class="modal-content">
+		<button type="button" class="close" data-dismiss="modal">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" viewBox="0 0 14 13.969">
+			  <path d="M9.012,6.813 L13.529,11.335 C14.131,11.937 14.130,12.913 13.528,13.515 C12.926,14.117 11.950,14.116 11.348,13.514 L6.831,8.992 L2.603,13.215 C2.017,13.800 1.067,13.800 0.482,13.214 C-0.104,12.628 -0.103,11.678 0.483,11.092 L4.711,6.869 L0.456,2.609 C-0.146,2.007 -0.146,1.031 0.457,0.430 C1.059,-0.172 2.035,-0.171 2.636,0.431 L6.892,4.691 L11.095,0.492 C11.681,-0.094 12.631,-0.093 13.217,0.493 C13.802,1.079 13.802,2.029 13.216,2.614 L9.012,6.813 Z"/>
+			</svg>
+		</button>
+	  <div class="modal-body text-center">
+		<h1>Don't Miss FREE Product Updates from Us</h1>
+		<p>Subscribe Our Newsletter <br>and Get Free Product Updates Every Week!!</p>
+		<form class="newsletter-form">
+			<div class="newsletter-field">
+				<span>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" viewBox="0 0 18 13">
+					  <path d="M15.798,13.000 L2.201,13.000 C0.987,13.000 -0.000,12.063 -0.000,10.911 L-0.000,2.089 C-0.000,0.936 0.987,-0.000 2.201,-0.000 L15.802,-0.000 C17.016,-0.000 18.003,0.940 17.999,2.092 L17.999,10.911 C17.999,12.063 17.012,13.000 15.798,13.000 ZM16.800,2.166 C16.800,1.541 16.259,1.083 15.600,1.083 L2.400,1.083 C1.740,1.083 1.200,1.541 1.200,2.166 L1.200,10.833 C1.200,11.459 1.740,11.916 2.400,11.916 L15.600,11.916 C16.259,11.916 16.800,11.459 16.800,10.833 L16.800,2.166 ZM15.791,11.049 C15.690,11.148 15.560,11.197 15.426,11.197 C15.303,11.197 15.176,11.155 15.080,11.066 L10.603,7.030 L9.348,8.097 C9.255,8.179 9.132,8.221 9.013,8.221 C8.893,8.221 8.774,8.182 8.677,8.101 L7.456,7.065 L2.953,11.063 C2.856,11.148 2.733,11.190 2.610,11.190 C2.476,11.190 2.342,11.137 2.242,11.038 C2.052,10.844 2.063,10.543 2.264,10.363 L6.700,6.422 L2.245,2.644 C2.037,2.467 2.018,2.166 2.204,1.968 C2.391,1.771 2.707,1.753 2.916,1.930 L7.735,6.023 C7.765,6.044 7.791,6.065 7.817,6.090 C7.817,6.093 7.821,6.097 7.825,6.100 L9.009,7.104 L15.080,1.933 C15.288,1.756 15.605,1.774 15.791,1.969 C15.977,2.166 15.959,2.467 15.754,2.644 L11.351,6.390 L15.772,10.374 C15.973,10.554 15.981,10.858 15.791,11.049 Z"/>
+					</svg>
+				</span>
+				<input id="newsletter_email" type="email" placeholder="Enter Your Email"/>
+			</div>
+			<div class="newsletter-btn">
+				<a href="javascript:void(0);" class="tb_btn">SUBSCRIBE</a>
+			</div>
+		</form>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<!-- Newsletter Ends -->
+
+
+<!-- Banner start -->
+	<div class="tb_banner_section tb_select_box">
+		<div class="container">
+			<div class="tb_banner_detail wow bounceInUp" data-wow-duration="2s">
+				<h1>Unique & Fast HTML Template And WordPress Theme Marketplace</h1>
+				<p>100% Responsive and Mobile Friendly</p>
+				<div class="int_textbox_subscribe4">
+					<div class="int_search_wrapper">
+						<select class="list" id="searchTechType">
+						  <option value="all" >All Categories</option>
+						  <option value="template">HTML Template</option>
+						  <option value="theme">WordPress Theme</option>
+						</select>
+					   <input type="text" placeholder="Search..." id="searchInput">
+						<a class="index4_btn tb_btn tb_search_btn" id="searchInputBtn">Search</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Banner end -->
+
+	<!-- Templates section -->
+		<div class="tb_template_section tb_featured">
+		<div class="tb_template_text">
+			<h2>Combo Deals</h2>
+			<p>Templates & Themes Added Weekly - Subscribe Now And Start Creating Websites.</p>
+		</div>
+		<div class="container">
+			<div class="row">
+							 		
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="tb_template_box">
+						<div class="tb_overlay">
+							<a href="https://templatebundle.net/template/top-20-psd-templates">
+						 <img src="https://templatebundle.net/repo/images/thumb/8mzfvLj_thumb.jpg" class="img-fluid" alt=""/>
+						 <div class="tb_botm_overlay"></div>
+							</a>
+						</div>
+						<div class="tb_web_name">
+							<div class="tb_web_text">
+								<h4><a href="https://templatebundle.net/template/top-20-psd-templates">Top 20 Multipurpose PSD Templates</a></h4>
+									<p><a href="https://templatebundle.net/category/templates">Combo Deals</a></p>
+							</div>
+							<div class="tb_web_dolor">
+								<h3>$19</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				 			 		
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="tb_template_box">
+						<div class="tb_overlay">
+							<a href="https://templatebundle.net/template/50-html-template">
+						 <img src="https://templatebundle.net/repo/images/thumb/0JKvjn1_thumb.jpg" class="img-fluid" alt=""/>
+						 <div class="tb_botm_overlay"></div>
+							</a>
+						</div>
+						<div class="tb_web_name">
+							<div class="tb_web_text">
+								<h4><a href="https://templatebundle.net/template/50-html-template">Top 50 Multipurpose HTML Templates</a></h4>
+									<p><a href="https://templatebundle.net/category/templates">Combo Deals</a></p>
+							</div>
+							<div class="tb_web_dolor">
+								<h3>$39</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				 			 		
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="tb_template_box">
+						<div class="tb_overlay">
+							<a href="https://templatebundle.net/template/100-wordpress-theme">
+						 <img src="https://templatebundle.net/repo/images/thumb/zP9fiY1_thumb.jpg" class="img-fluid" alt=""/>
+						 <div class="tb_botm_overlay"></div>
+							</a>
+						</div>
+						<div class="tb_web_name">
+							<div class="tb_web_text">
+								<h4><a href="https://templatebundle.net/template/100-wordpress-theme">Top 100 Multipurpose Responsive WordPress Themes</a></h4>
+									<p><a href="https://templatebundle.net/category/templates">Combo Deals</a></p>
+							</div>
+							<div class="tb_web_dolor">
+								<h3>$49</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				 			</div>
+		</div>
+	</div>
+		
+	<!-- Templates section -->
+
+
+	<!-- Templates section -->
+	<div class="tb_template_section tb_featured">
+		<div class="tb_template_text">
+			<h2>Featured Trending Of The Week</h2>
+			<p>Templates & Themes Added Weekly - Subscribe Now And Start Creating Websites.</p>
+		</div>
+		<div class="container">
+			<div class="row">
+							 		
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="tb_template_box">
+						<div class="tb_overlay">
+							<a href="https://templatebundle.net/template/locksmith-website-template">
+						 <img src="https://templatebundle.net/repo/images/thumb/0qEoK86_thumb.jpg" class="img-fluid" alt=""/>
+						 <div class="tb_botm_overlay"></div>
+							</a>
+						</div>
+						<div class="tb_web_name">
+							<div class="tb_web_text">
+								<h4><a href="https://templatebundle.net/template/locksmith-website-template">Locksmith HTML Website Template</a></h4>
+																				<p><a href="https://templatebundle.net/category/templates">HTML Template</a></p>	
+							</div>
+							<div class="tb_web_dolor">
+								<h3>$15</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				 			 		
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="tb_template_box">
+						<div class="tb_overlay">
+							<a href="https://templatebundle.net/template/herbal-pure-html-template">
+						 <img src="https://templatebundle.net/repo/images/thumb/3RsNVzF_thumb.jpg" class="img-fluid" alt=""/>
+						 <div class="tb_botm_overlay"></div>
+							</a>
+						</div>
+						<div class="tb_web_name">
+							<div class="tb_web_text">
+								<h4><a href="https://templatebundle.net/template/herbal-pure-html-template">Herbal Pure HTML Website Template</a></h4>
+																				<p><a href="https://templatebundle.net/category/templates">HTML Template</a></p>	
+							</div>
+							<div class="tb_web_dolor">
+								<h3>$15</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				 			 		
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="tb_template_box">
+						<div class="tb_overlay">
+							<a href="https://templatebundle.net/template/horoscope-and-astrology-wordpress-theme">
+						 <img src="https://templatebundle.net/repo/images/thumb/hRi1IGX_thumb.jpg" class="img-fluid" alt=""/>
+						 <div class="tb_botm_overlay"></div>
+							</a>
+						</div>
+						<div class="tb_web_name">
+							<div class="tb_web_text">
+								<h4><a href="https://templatebundle.net/template/horoscope-and-astrology-wordpress-theme">Horoscope And Astrology WordPress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>	
+							</div>
+							<div class="tb_web_dolor">
+								<h3>$59</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				 			 		
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="tb_template_box">
+						<div class="tb_overlay">
+							<a href="https://templatebundle.net/template/christmas-decoration-wordpress-theme">
+						 <img src="https://templatebundle.net/repo/images/thumb/U12H9hE_thumb.jpg" class="img-fluid" alt=""/>
+						 <div class="tb_botm_overlay"></div>
+							</a>
+						</div>
+						<div class="tb_web_name">
+							<div class="tb_web_text">
+								<h4><a href="https://templatebundle.net/template/christmas-decoration-wordpress-theme">Christmas Decoration WordPress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>	
+							</div>
+							<div class="tb_web_dolor">
+								<h3>$30</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				 			</div>
+		</div>
+	</div>
+	<!-- Templates section -->
+	
+		<!-- Templates section -->
+	<div class="tb_template_section" id="all-templates">
+		<div class="tb_template_text">
+			<h2>
+				462 Pre-Built HTML Template & WordPress Themes			</h2>			
+			<p>Templates & Themes Added Weekly - Subscribe Now and Start Creating Websites</p>
+		</div>
+		<div class="row">
+			<div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+				<div class="tb_sidebar">
+					<div class="tb_category_head">
+						<div class="tb_category_name">
+							<h4>Category</h4>
+						</div>
+						<div class="tb_category_cl">
+						</div>
+					</div>
+					<div class="tb_blog_category_mini">
+					
+						<ul class="tb_blog_category_mini_li">
+
+							<li class="active">
+							<div class="tb_checkbox">
+
+							    <a class="tb-sidebar-active" href="https://templatebundle.net/" >All</a>
+							</div>
+														<span>462</span>
+							</li>
+
+							<li class="">
+							<div class="tb_checkbox">
+							    <a class="" href="https://templatebundle.net/category/templates" >HTML Template</a>
+							</div>
+							<span>125</span>
+							</li>
+							
+							<li class="">
+							<div class="tb_checkbox">
+							  <a class="" href="https://templatebundle.net/category/wordpress-themes">WordPress Theme</a>
+							</div>
+							<span>334</span>
+							</li> 
+
+							<li class="">
+							<div class="tb_checkbox">
+							    <a class="" href="https://templatebundle.net/home/deals" >Combo Deals</a>
+							</div>
+							<span>3</span>
+							</li>
+
+						</ul>
+					</div>
+					<div class="tb_category_head tb_category_area">
+						<div class="tb_category_name">
+							<h4>Area of Interest</h4>
+						</div>
+					</div>
+					<div class="tb_blog_category_mini tb-categorby-filter">
+						<ul>												    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/corporate" class="" for="1">Corporate</a>
+							</div>
+							<span>62</span> 
+							</li>
+							
+													    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/creative" class="" for="2">Creative</a>
+							</div>
+							<span>13</span> 
+							</li>
+							
+													    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/retail" class="" for="3">Retail</a>
+							</div>
+							<span>21</span> 
+							</li>
+							
+													    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/personal" class="" for="5">Personal</a>
+							</div>
+							<span>4</span> 
+							</li>
+							
+													    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/technology" class="" for="7">Technology</a>
+							</div>
+							<span>3</span> 
+							</li>
+							
+													    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/entertainment" class="" for="8">Entertainment</a>
+							</div>
+							<span>9</span> 
+							</li>
+							
+													    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/nonprofit" class="" for="9">Nonprofit</a>
+							</div>
+							<span>5</span> 
+							</li>
+							
+													    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/miscellaneous" class="" for="11">Miscellaneous</a>
+							</div>
+							<span>2</span> 
+							</li>
+							
+													    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/wedding" class="" for="12">Wedding</a>
+							</div>
+							<span>1</span> 
+							</li>
+							
+													    
+							<li>
+
+							<div class="tb_checkbox">
+							  <a href="https://templatebundle.net/category/templates/restaurants-cafes" class="" for="13">Restaurants Cafes</a>
+							</div>
+							<span>5</span> 
+							</li>
+							
+													</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-10 col-lg-9 col-md-8 col-sm-7">
+				<div class="row">
+									<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/top-20-psd-templates">
+								<!--<img src="https://templatebundle.net/repo/images/A6uBwJx.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/8mzfvLj_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/top-20-psd-templates">Top 20 Multipurpose PSD Templates</a></h4>
+																</div>
+								<div class="tb_web_dolor">
+									<h3>$19</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/50-html-template">
+								<!--<img src="https://templatebundle.net/repo/images/MtB8QNH.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/0JKvjn1_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/50-html-template">Top 50 Multipurpose HTML Templates</a></h4>
+																</div>
+								<div class="tb_web_dolor">
+									<h3>$39</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/100-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/2D4RnW9.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/zP9fiY1_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/100-wordpress-theme">Top 100 Multipurpose Responsive WordPress Themes</a></h4>
+																</div>
+								<div class="tb_web_dolor">
+									<h3>$49</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/kitchen-store-ecommerce-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/feUqEbG.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/wLRQ39D_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/kitchen-store-ecommerce-wordpress-theme">Kitchen Store WordPress eCommerce Themes</a></h4>
+																		<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>								</div>
+								<div class="tb_web_dolor">
+									<h3>$30</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/plumbing-and-heating-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/T9QGVsZ.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/3uE7azJ_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/plumbing-and-heating-wordpress-theme">Plumbing And Heating Wordpress Theme</a></h4>
+																		<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>								</div>
+								<div class="tb_web_dolor">
+									<h3>$30</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/painting-and-art-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/hc4l80Q.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/zxr4w3P_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/painting-and-art-wordpress-theme">Painting and Art WordPress Themes</a></h4>
+																		<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>								</div>
+								<div class="tb_web_dolor">
+									<h3>$30</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/online-fruits-shop-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/bx3v8Wl.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/PcaY9l2_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/online-fruits-shop-wordpress-theme">Online Fruits Shop Wordpress Theme</a></h4>
+																		<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>								</div>
+								<div class="tb_web_dolor">
+									<h3>$30</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/exercise-equipment-store-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/kYP8bUc.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/HmIyjzt_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/exercise-equipment-store-wordpress-theme">Gym Exercise Equipment Store Wordpress Theme</a></h4>
+																		<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>								</div>
+								<div class="tb_web_dolor">
+									<h3>$30</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/conifer-plant-store-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/QYlfmju.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/s7mSGne_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/conifer-plant-store-wordpress-theme">Conifer Plant Store Wordpress Theme</a></h4>
+																		<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>								</div>
+								<div class="tb_web_dolor">
+									<h3>$30</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/power-tools-store-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/d25Vi6v.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/Kvkzhwe_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/power-tools-store-wordpress-theme">Power Tools Store Wordpress Theme</a></h4>
+																		<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>								</div>
+								<div class="tb_web_dolor">
+									<h3>$30</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/sports-nutrition-shop-elementor-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/iGWb82s.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/3sVGhoP_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/sports-nutrition-shop-elementor-wordpress-theme">Sports Nutrition Shop Wordpress Theme</a></h4>
+																		<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>								</div>
+								<div class="tb_web_dolor">
+									<h3>$30</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+						<div class="tb_template_box">
+							<div class="tb_overlay">
+								<a href="https://templatebundle.net/template/online-pizza-and-fast-food-wordpress-theme">
+								<!--<img src="https://templatebundle.net/repo/images/HAyZtcM.jpg" class="img-fluid" alt=""/>-->
+								<img src="https://templatebundle.net/repo/images/thumb/OmVp9jE_thumb.jpg" class="img-fluid" alt=""/>
+								<div class="tb_botm_overlay"></div>
+								</a>
+							</div>
+							<div class="tb_web_name">
+								<div class="tb_web_text">
+									<h4><a href="https://templatebundle.net/template/online-pizza-and-fast-food-wordpress-theme">Online Pizza Ordering And Fast Food Wordpress Theme</a></h4>
+																		<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>								</div>
+								<div class="tb_web_dolor">
+									<h3>$30</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+										
+					
+				</div>
+				<div class="tb_pagination">
+				<ul class="pagination">
+			<li  title="First" class="pre hide page-item"><a class="page-link" href="/?page=1"><i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            </a></li><li data-value="0" class="active page-item"><span>1</span></li><li data-value="12" class=" page-item"><a class="page-link" href="/?page=2">2</a></li><li data-value="24" class=" page-item"><a class="page-link" href="/?page=3">3</a></li><li data-value="36" class=" page-item"><a class="page-link" href="/?page=4">4</a></li><li data-value="48" class=" hide page-item"><a class="page-link" href="/?page=5">5</a></li><li data-value="60" class=" hide page-item"><a class="page-link" href="/?page=6">6</a></li><li data-value="72" class=" hide page-item"><a class="page-link" href="/?page=7">7</a></li><li data-value="84" class=" hide page-item"><a class="page-link" href="/?page=8">8</a></li><li data-value="96" class=" hide page-item"><a class="page-link" href="/?page=9">9</a></li><li data-value="108" class=" hide page-item"><a class="page-link" href="/?page=10">10</a></li><li data-value="120" class=" hide page-item"><a class="page-link" href="/?page=11">11</a></li><li data-value="132" class=" hide page-item"><a class="page-link" href="/?page=12">12</a></li><li data-value="144" class=" hide page-item"><a class="page-link" href="/?page=13">13</a></li><li data-value="156" class=" hide page-item"><a class="page-link" href="/?page=14">14</a></li><li data-value="168" class=" hide page-item"><a class="page-link" href="/?page=15">15</a></li><li data-value="180" class=" hide page-item"><a class="page-link" href="/?page=16">16</a></li><li data-value="192" class=" hide page-item"><a class="page-link" href="/?page=17">17</a></li><li data-value="204" class=" hide page-item"><a class="page-link" href="/?page=18">18</a></li><li data-value="216" class=" hide page-item"><a class="page-link" href="/?page=19">19</a></li><li data-value="228" class=" hide page-item"><a class="page-link" href="/?page=20">20</a></li><li data-value="240" class=" hide page-item"><a class="page-link" href="/?page=21">21</a></li><li data-value="252" class=" hide page-item"><a class="page-link" href="/?page=22">22</a></li><li data-value="264" class=" hide page-item"><a class="page-link" href="/?page=23">23</a></li><li data-value="276" class=" hide page-item"><a class="page-link" href="/?page=24">24</a></li><li data-value="288" class=" hide page-item"><a class="page-link" href="/?page=25">25</a></li><li data-value="300" class=" hide page-item"><a class="page-link" href="/?page=26">26</a></li><li data-value="312" class=" hide page-item"><a class="page-link" href="/?page=27">27</a></li><li data-value="324" class=" hide page-item"><a class="page-link" href="/?page=28">28</a></li><li data-value="336" class=" hide page-item"><a class="page-link" href="/?page=29">29</a></li><li data-value="348" class=" hide page-item"><a class="page-link" href="/?page=30">30</a></li><li data-value="360" class=" hide page-item"><a class="page-link" href="/?page=31">31</a></li><li data-value="372" class=" hide page-item"><a class="page-link" href="/?page=32">32</a></li><li data-value="384" class=" hide page-item"><a class="page-link" href="/?page=33">33</a></li><li data-value="396" class=" hide page-item"><a class="page-link" href="/?page=34">34</a></li><li data-value="408" class=" hide page-item"><a class="page-link" href="/?page=35">35</a></li><li data-value="420" class=" hide page-item"><a class="page-link" href="/?page=36">36</a></li><li data-value="432" class=" hide page-item"><a class="page-link" href="/?page=37">37</a></li><li data-value="444" class=" hide page-item"><a class="page-link" href="/?page=38">38</a></li><li data-value="456" class=" hide page-item"><a class="page-link" href="/?page=39">39</a></li><li  data-value="48" data-test="468" title="next" class="next page-item"><a class="page-link" href="/?page=5"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li></ul>				
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Templates section -->
+	
+	<!-- Slider -->
+	<div class="tb_template_section tb_slider_section">
+		<div class="tb_template_text">
+			<h2>Best WordPress Themes</h2>
+			<p>WordPress Themes Added Weekly - Subscribe Now And Start Creating Best Websites.</p>
+		</div>
+		 <!-- Swiper -->
+		<div class="tb_swiper_slider">
+			<div class="container">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+											<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/kitchen-store-ecommerce-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/wLRQ39D_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/kitchen-store-ecommerce-wordpress-theme">Kitchen Store WordPress eCommerce Themes</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/plumbing-and-heating-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/3uE7azJ_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/plumbing-and-heating-wordpress-theme">Plumbing And Heating Wordpress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/painting-and-art-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/zxr4w3P_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/painting-and-art-wordpress-theme">Painting and Art WordPress Themes</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/online-fruits-shop-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/PcaY9l2_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/online-fruits-shop-wordpress-theme">Online Fruits Shop Wordpress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/exercise-equipment-store-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/HmIyjzt_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/exercise-equipment-store-wordpress-theme">Gym Exercise Equipment Store Wordpress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/conifer-plant-store-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/s7mSGne_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/conifer-plant-store-wordpress-theme">Conifer Plant Store Wordpress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/power-tools-store-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/Kvkzhwe_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/power-tools-store-wordpress-theme">Power Tools Store Wordpress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/sports-nutrition-shop-elementor-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/3sVGhoP_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/sports-nutrition-shop-elementor-wordpress-theme">Sports Nutrition Shop Wordpress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/online-pizza-and-fast-food-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/OmVp9jE_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/online-pizza-and-fast-food-wordpress-theme">Online Pizza Ordering And Fast Food Wordpress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/garden-tools-store-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/ELQ6Myj_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/garden-tools-store-wordpress-theme">Garden Tools Store Wordpress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/catholic-gifts-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/O3kDq1o_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/catholic-gifts-wordpress-theme">Catholic Gifts Wordpress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+												<div class="swiper-slide">
+							<div class="tb_template_box">
+								<div class="tb_overlay">
+									<a href="https://templatebundle.net/template/online-stationery-wordpress-theme">
+									<img src="https://templatebundle.net/repo/images/thumb/ov8461M_thumb.jpg" class="img-fluid" alt=""/>
+									<div class="tb_botm_overlay"></div>
+									</a>
+								</div>
+								<div class="tb_web_name">
+									<div class="tb_web_text">
+										<h4><a href="https://templatebundle.net/template/online-stationery-wordpress-theme">Online Stationery WordPress Theme</a></h4>
+																				<p><a href="https://templatebundle.net/category/wordpress-themes">Wordpress Theme</a></p>									</div>
+									<div class="tb_web_dolor">
+										<h3>$30</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+											</div>
+				</div>
+				
+				<!-- Add Pagination -->
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-button-prev swiper-button-white"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Slider -->
+	
+	<!-- Templates section -->
+	<div class="tb_template_pro">
+	     <h2>400+ Premium Website Templates That Perfectly Fit Your Business</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-6 col-sm-6">
+					<div class="tb_service_box"> 
+						<img src="https://templatebundle.net/themes/themeone/images/icon1.png" class="img-fluid" alt=""/> 
+						<h4>Secure Payment</h4>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-6 col-sm-6">
+					<div class="tb_service_box"> 
+						<img src="https://templatebundle.net/themes/themeone/images/icon2.png" class="img-fluid" alt=""/> 
+						<h4>Quality Products</h4>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-6 col-sm-6">
+					<div class="tb_service_box"> 
+						<img src="https://templatebundle.net/themes/themeone/images/icon3.png" class="img-fluid" alt=""/> 
+						<h4>easy buy & sell</h4>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-6 col-sm-6">
+					<div class="tb_service_box"> 
+						<img src="https://templatebundle.net/themes/themeone/images/icon4.png" class="img-fluid" alt=""/> 
+						<h4>fully responsive</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	 
+	<!-- Templates section -->	<!--<div class="container" style="max-width: 960px;">
+			
+				<!-- <div class="col-xl-3 col-lg-6 col-sm-6">
+				    <a href="https://templatebundle.net/home/deals" target="_blank"><img src="http://kamleshyadav.com//salespageimagesthemeforest/common/banner.gif" alt="Black friday"></a>
+				</div>
+</div>-->
+<br><br>
+  	<!-- Banner start -->
+	<div class="tb_banner_section">
+		<div class="container">
+			<div class="tb_banner_detail tb_banner_buy">
+				<h2 style="font-size: 60px;color: #ffffff;font-weight: 800;">Buy Template Bundle Now!</h2>
+				<p>Looking For Customized Website Development ?<br>Connect us for Quote</p>
+				<a href="https://templatebundle.net/contact-us" class="tb_btn">Contact Us</a>
+			</div>
+		</div>
+	</div>
+		<!-- Banner end -->
+	<!-- footer start -->
+	<div class="tb_footer_section">
+		<div class="container">
+			<div class="row">
+			     <div class="col-lg-4 col-md-12">
+					<div class="tb_footer_icon">
+					    <ul>
+        					<li><a href="https://www.facebook.com/templatebundle.net" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        					<li><a href="https://www.linkedin.com/company/template-bundle-18" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        					<li><a href="https://twitter.com/Template_bundle" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        					<li><a href="https://in.pinterest.com/templatebundle/boards/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+        					<li><a href="https://www.instagram.com/templatebundle/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        				</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="tb_footer_left">
+						<p>Copyright © 2020 Template Bundle. All rights reserved.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="tb_footer_right">
+						<ul>
+							<li><a href="https://templatebundle.net/terms">Terms and Conditions</a></li>
+							<li><a href="https://templatebundle.net/privacy">Privacy Policy</a></li>
+							<li><a href="https://templatebundle.net/contact-us">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer end -->
+	
+	<!--CSS Starts-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="https://templatebundle.net/webimage/favicon.png" />
+	<!-- stylesheet start -->
+	<link href="https://templatebundle.net/themes/tbundle/css/layerslider.css" rel="stylesheet">
+	<link href="https://templatebundle.net/themes/tbundle/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="https://templatebundle.net/themes/tbundle/css/toastr.css" rel="stylesheet">
+	<link href="https://templatebundle.net/themes/themeone/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/nice-select.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/fonts.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="https://templatebundle.net/themes/themeone/css/style.css" rel="stylesheet" type="text/css"/>
+	<!--Css Ends-->
+	
+
+<!-- Error Messages Start -->
+<input type="hidden" value="Username should not contain any special characters and should be not more that 10 characters." id="usernameerr_text">
+<input type="hidden" value="Username is already taken. Please, try again." id="usernameexists_text">
+<input type="hidden" value="Email is already taken. Please, try again." id="emailexists_text">
+<input type="hidden" value="Email should be correct." id="emailerr_text">
+<input type="hidden" value="All fields are Required" id="emptyerr_text">
+<input type="hidden" value="Password should contain minimum 7 characters." id="pwderr_text">
+<input type="hidden" value="Both passwords should be same." id="repwderr_text">
+<input type="hidden" value="Successfully logged in." id="loginsuc_text">
+<input type="hidden" value="Please, check your email for the forgot password link." id="forgotpwdsuc_text">
+<input type="hidden" value="Congratulations your account is active now" id="registersuc_text">
+<input type="hidden" value="Please, activate your account." id="actvtacnt_text">
+<input type="hidden" value="Contact support, your account is blocked." id="blockacnt_text">
+<input type="hidden" value="Login details are incorrect." id="loginerr_text">
+<input type="hidden" value="This detail is not with us." id="forgotpwderr_text">
+<input type="hidden" value="Password changed successfully." id="pwdchngsuc_text">
+
+<!-- Error Messages End -->
+<input type="hidden" value="https://templatebundle.net/" id="basepath">
+<!-- site jquery start -->
+<script src="https://templatebundle.net/themes/themeone/js/jquery.min.js" defer></script>
+<script type="text/javascript" src="https://templatebundle.net/themes/tbundle/js/jquery.dataTables.min.js" defer></script>
+<script type="text/javascript" src="https://templatebundle.net/themes/tbundle/js/toastr.js" defer></script>
+<script src="https://templatebundle.net/themes/tbundle/js/custom_login.js" defer></script>
+<script src="https://templatebundle.net/themes/themeone/js/site_custom.js" defer></script>
+<script src="https://templatebundle.net/themes/themeone/js/nice-select.min.js" defer></script>
+<script src="https://templatebundle.net/themes/themeone/js/bootstrap.min.js" defer></script>
+<script src="https://templatebundle.net/themes/themeone/js/swiper.min.js" defer></script>
+<script src="https://templatebundle.net/themes/themeone/js/custom.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+setTimeout($(document).ready(function () {
+    jQuery(".close_modal").click(function(){
+      jQuery(".image_modal_down").hide();
+    });
+}), 10000);
+</script>
+
+<!--<script src="https://xsupport.co/assets/js/custchat.js" id="XsscriptID" data-app_url="xsupport-8662d" data-color_code="#2edfc6"></script>-->
+
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?67405';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+	var basepath = $('#basepath').val();
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#25D366",
+      "ctaText":"Contact Us",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"PixelNX Support",
+      "brandSubTitle":"Working hours are 10:00AM to 6:00PM IST",
+      "brandImg":  basepath + "themes/themeone/images/favicon.png", //"https://xsupport.co/assets/images/favicon.png",
+      "welcomeText":"Hi, there!\nHow can I help you?",
+      "backgroundColor":"#25D366",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"918989977272"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+</body>
+</html><!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog tb_model_dialog">
+     <!-- Modal content-->
+		<div class="template_bundle_modal text-center">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <div class="tb_model_logo">
+				<svg 
+				 xmlns="http://www.w3.org/2000/svg"
+				 xmlns:xlink="http://www.w3.org/1999/xlink"
+				 width="148px" height="49px">
+				<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+				 d="M147.795,35.337 L147.795,37.051 L141.361,37.051 L141.361,28.368 L147.657,28.368 L147.657,30.095 L143.310,30.095 L143.310,31.883 L147.220,31.883 L147.220,33.536 L143.310,33.536 L143.310,35.337 L147.795,35.337 ZM137.113,8.996 L146.647,8.996 L146.647,11.610 L140.064,11.610 L140.064,14.319 L145.985,14.319 L145.985,16.821 L140.064,16.821 L140.064,19.548 L146.855,19.548 L146.855,22.144 L137.113,22.144 L137.113,8.996 ZM131.211,22.144 L128.260,22.144 L128.260,11.535 L124.515,11.535 L124.515,8.996 L134.957,8.996 L134.957,11.535 L131.211,11.535 L131.211,22.144 ZM121.904,22.144 L120.675,19.304 L115.132,19.304 L113.903,22.144 L110.762,22.144 L116.475,8.996 L119.332,8.996 L125.044,22.144 L121.904,22.144 ZM117.913,12.908 L116.248,16.727 L119.559,16.727 L117.913,12.908 ZM101.739,8.996 L104.690,8.996 L104.690,19.529 L110.327,19.529 L110.327,22.144 L101.739,22.144 L101.739,8.996 ZM93.643,18.476 L91.884,18.476 L91.884,22.144 L88.933,22.144 L88.933,8.996 L93.606,8.996 C95.636,8.996 97.115,9.388 98.041,10.171 C98.968,10.955 99.432,12.159 99.432,13.783 C99.432,15.407 98.956,16.595 98.004,17.347 C97.051,18.100 95.598,18.476 93.643,18.476 ZM95.715,11.996 C95.254,11.676 94.539,11.516 93.568,11.516 L91.884,11.516 L91.884,15.937 L93.870,15.937 C94.854,15.937 95.522,15.739 95.876,15.344 C96.228,14.949 96.405,14.373 96.405,13.614 C96.405,12.855 96.175,12.316 95.715,11.996 ZM90.202,28.368 L92.150,28.368 L92.150,37.051 L90.202,37.051 L86.041,31.610 L86.041,37.051 L84.092,37.051 L84.092,28.368 L85.916,28.368 L90.202,33.958 L90.202,28.368 ZM82.729,13.868 L79.153,21.053 L77.394,21.053 L73.838,13.868 L73.838,22.144 L70.887,22.144 L70.887,8.996 L74.878,8.996 L78.283,16.219 L81.707,8.996 L85.680,8.996 L85.680,22.144 L82.729,22.144 L82.729,13.868 ZM71.949,28.368 L71.949,33.225 C71.949,34.484 71.599,35.451 70.900,36.126 C70.200,36.801 69.305,37.138 68.214,37.138 C67.122,37.138 66.225,36.799 65.521,36.120 C64.818,35.441 64.466,34.476 64.466,33.225 L64.466,28.368 L66.415,28.368 L66.415,33.163 C66.415,33.859 66.577,34.407 66.902,34.809 C67.227,35.211 67.664,35.411 68.214,35.411 C68.763,35.411 69.198,35.211 69.519,34.809 C69.840,34.407 70.000,33.859 70.000,33.163 L70.000,28.368 L71.949,28.368 ZM58.516,8.996 L68.050,8.996 L68.050,11.610 L61.467,11.610 L61.467,14.319 L67.388,14.319 L67.388,16.821 L61.467,16.821 L61.467,19.548 L68.258,19.548 L68.258,22.144 L58.516,22.144 L58.516,8.996 ZM52.614,22.144 L49.663,22.144 L49.663,11.535 L45.918,11.535 L45.918,8.996 L56.360,8.996 L56.360,11.535 L52.614,11.535 L52.614,22.144 ZM50.792,28.579 C51.221,28.720 51.544,28.910 51.760,29.150 C52.152,29.598 52.347,30.103 52.347,30.666 C52.347,31.345 52.127,31.850 51.685,32.182 C51.535,32.298 51.431,32.370 51.373,32.399 C51.315,32.428 51.211,32.476 51.061,32.542 C51.602,32.658 52.033,32.900 52.354,33.269 C52.674,33.637 52.835,34.095 52.835,34.641 C52.835,35.246 52.626,35.780 52.210,36.244 C51.727,36.782 50.886,37.051 49.686,37.051 L45.864,37.051 L45.864,28.368 L49.262,28.368 C49.853,28.368 50.363,28.438 50.792,28.579 ZM47.812,35.411 L49.149,35.411 C49.707,35.411 50.126,35.343 50.405,35.206 C50.684,35.070 50.823,34.801 50.823,34.399 C50.823,33.997 50.675,33.732 50.380,33.604 C50.084,33.476 49.611,33.411 48.962,33.411 L47.812,33.411 L47.812,35.411 ZM47.812,30.008 L47.812,31.883 L48.737,31.883 C49.278,31.883 49.680,31.826 49.943,31.709 C50.205,31.594 50.336,31.343 50.336,30.958 C50.336,30.573 50.215,30.318 49.974,30.194 C49.732,30.070 49.324,30.008 48.749,30.008 L47.812,30.008 ZM111.090,29.504 C111.923,30.262 112.339,31.316 112.339,32.666 C112.339,34.016 111.933,35.084 111.121,35.871 C110.309,36.658 109.070,37.051 107.404,37.051 L104.419,37.051 L104.419,28.368 L107.504,28.368 C109.062,28.368 110.257,28.747 111.090,29.504 ZM106.367,30.057 L106.367,35.337 L107.604,35.337 C108.495,35.337 109.180,35.113 109.659,34.666 C110.138,34.219 110.378,33.569 110.378,32.716 C110.378,31.863 110.138,31.206 109.659,30.747 C109.180,30.287 108.445,30.057 107.454,30.057 L106.367,30.057 ZM126.094,35.325 L129.817,35.325 L129.817,37.051 L124.145,37.051 L124.145,28.368 L126.094,28.368 L126.094,35.325 Z"/>
+				<path fill-rule="evenodd"  opacity="0.451" fill="rgb(255, 255, 255)"
+				 d="M0.683,43.669 L0.683,5.094 L34.787,0.503 L34.787,48.495 L0.683,43.669 ZM20.758,18.027 L20.485,17.712 L11.793,17.032 L8.141,20.150 L8.496,20.501 L17.619,20.871 L17.619,31.948 L17.918,32.226 L20.485,32.005 L20.758,31.689 L20.758,18.027 ZM23.538,29.165 L31.490,19.058 L31.490,18.629 L21.736,17.873 L21.469,18.143 L21.469,26.498 L21.607,26.644 L24.927,22.624 L23.150,20.425 L27.220,20.623 L21.469,27.527 L21.469,31.630 L21.736,31.898 L31.490,31.059 L31.591,30.918 L27.220,25.273 L25.666,27.238 L27.100,28.968 L23.538,29.165 Z"/>
+				<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+				 d="M3.807,46.548 L3.807,2.840 L37.752,7.021 L37.752,42.153 L3.807,46.548 ZM20.758,18.027 L20.485,17.712 L11.793,17.032 L8.141,20.150 L8.496,20.501 L17.619,20.871 L17.619,31.948 L17.918,32.226 L20.485,32.005 L20.758,31.689 L20.758,18.027 ZM23.538,29.165 L31.490,19.058 L31.490,18.629 L21.736,17.873 L21.469,18.143 L21.469,26.498 L21.607,26.644 L24.927,22.624 L23.150,20.425 L27.220,20.623 L21.469,27.527 L21.469,31.630 L21.736,31.898 L31.490,31.059 L31.591,30.918 L27.220,25.273 L25.666,27.238 L27.100,28.968 L23.538,29.165 Z"/>
+				</svg>
+			  </div>
+			</div>
+			<div class="modal-body">
+			  <div class="tb_model_body">
+				<h2>Get 5 Awesome Templates<br> Free</h2>
+				<h4>Enter Your Email to Download <span>Free Templates</span></h4>
+				<div class="signup">
+				  <input type="text"  name="useremail" id="useremail"  placeholder="Enter your email here...." >
+					<input type="button" value="Subscribe!" class="aw_subscribe"  id="btn">
+				</div>
+				<div class="aw_messages"></div>
+			  </div>
+			</div>
+			<div class="modal-footer">
+				<div class="tb_remember">
+			     <label>Don't show this again
+			       <input type="checkbox" id="checkboxdontshow" />
+			       <label for="checkboxdontshow" class="tb_checkbox"></label>
+				 </label>
+				</div>
+			</div>
+		  </div>
+		</div>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type='text/javascript'>
+            
+            jQuery(document).ready(function($){
+                
+                $('.aw_subscribe').on('click',function(event){
+                    event.preventDefault();
+                    
+                    var useremail = $('#useremail').val();
+                    if (useremail == '') {
+                         $('.aw_messages').html('<span class="error_message">Please Enter Email!</span');
+                    }else{
+                        
+                    if ( validateEmail(useremail) ) {
+                        
+                    $.ajax({ 
+                        url:'https://templatebundle.net/index.php/Newsletter/templatebundle_awbersubscribe',
+                        method: 'post',
+                       data: {useremail: useremail},
+                       // dataType: 'json',
+                        success: function(response){
+                            
+                           var result = JSON.parse(response);
+                           if(result.statusf == 'success'){
+                               
+                            var cname = 'subscriber';
+                            var cvalue = 'subscribealerday';
+                            var exdays = 1;
+                            var d = new Date(); 
+                            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 10));
+                            var expires = "expires="+d.toUTCString();
+                            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                            
+                            $('.aw_messages').html('<span class="success_message">'+result.success+'</span');
+                            
+                            model_close();
+                           
+                            }else{
+                                
+                            $('.aw_messages').html('<span class="error_message">'+result.error+'</span');
+                            
+                           }
+                        }
+                        
+                      });
+                     // ajax end
+                     
+                     }else{
+                       $('.aw_messages').html('<span class="error_message">Please Enter Validate Email Addresses!</span');  
+                     }
+                    
+                    }
+                    
+                });
+                
+              function validateEmail(uemail) {
+            	  var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+            	    if (filter.test(uemail)) {
+            	        return true;
+            	    }
+            	    else {
+            	        return false;
+            	    }
+            	}   
+                
+            });
+            
+            function model_close(){
+                setTimeout(function(){ $('#myModal').modal('hide'); }, 3000);
+            }
+            
+           /**
+                   * done show popup
+                   */ 
+                     
+                   $('#checkboxdontshow').on('click',function() {
+                       
+                        if(this.checked) {
+                            
+                            var returnVal = confirm("Are you sure?");
+                            
+                            var checknow = $(this).prop("checked", returnVal);
+                            
+                            if(checknow){
+                            var cname = 'nodshow';
+                            var cvalue = 'subscribeformnodtshow';
+                            var minutes = 30;
+                            var d = new Date(); 
+                            d.setTime(d.getTime() + (minutes * 60 * 1000));
+                            var expires = "expires="+d.toUTCString();
+                            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                            
+                            setTimeout(function(){ $('#myModal').modal('hide'); }, 100);
+                            }
+                            
+                        }
+                       
+                   });
+            
+        </script>
+    </div>
+  </div>
+ 

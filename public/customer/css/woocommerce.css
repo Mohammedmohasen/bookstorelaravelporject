@@ -1,0 +1,19 @@
+@font-face{font-family:star;src:url(../fonts/star.eot);src:url(../fonts/star.eot?#iefix) format('embedded-opentype'), url(../fonts/star.woff) format('woff'), url(../fonts/star.ttf) format('truetype'), url(../fonts/star.svg#star) format('svg');font-weight:400;font-style:normal;}
+.woo_new_product{width:100%;float:left;margin-bottom:100px;}
+.woo_heading{width:100%;float:left;margin-bottom:30px;position:relative;}
+.woo_heading h4{font-size:20px;display:inline-block;background-color:#fff;padding-right:15px;}
+.woo_heading:after{content:"";position:absolute;top:50%;right:0;left:auto;width:100%;height:1px;background-color:#c8cdd2;z-index:-1;}
+.products{display:block;text-align:center;}
+.products .product-image{display:block;position:relative;}
+.products .product-image .image img{width:100%;}
+.products .product-image .image:hover img{opacity:0.8;}
+.products .product-image .tag{position:absolute;top:15px;right:-3px;color:#fff;text-transform:uppercase;background-color:#74d2a6;padding:3px 10px;box-shadow:-2px 2px 2px rgba(0, 0, 0, 0.4);}
+.star-rating{position:relative;height:1em;line-height:1em;font-size:1em;width:5.4em;font-family:star;text-align:center;margin:0 auto;margin-bottom:10px;}
+.star-rating:before{content:"\53\53\53\53\53";color:#EAEAEA;float:left;top:0;left:0;position:absolute;text-shadow:1px 1px 1px rgba(0, 0, 0, 0.27);}
+.star-rating span{overflow:hidden;float:left;top:0;left:0;position:absolute;padding-top:1.5em}
+.star-rating span:before{content:"\53\53\53\53\53";top:0;position:absolute;left:0;color:#ffdd5f;}
+.products .product-info{width:100%;float:left;}
+.products .product-info h3{font-size:14px;text-transform:uppercase;margin-bottom:5px;}
+.products .product-info h3 a{color:#999999;text-decoration:none;}
+.products .product-info h3 a:hover{color:#99a4bd;}
+.products .product-price .price{display:block;font-size:24px;color:#555555;font-family:"Myriad Pro";}
