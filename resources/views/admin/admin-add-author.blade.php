@@ -19,7 +19,7 @@
 
       <link rel="stylesheet" href="{{ asset('admin/css/remixicon.css') }}">
 
-
+   
 
 
    </head>
@@ -94,7 +94,7 @@
                         <div class="iq-card-body">
                              @include('include.massege')
                            <form method="POST" action="{{ action('controlController@store') }}">
-                               
+
                                   @csrf
                                <input type="hidden" name="requestName" value="add-author-form"/>
                               <div class="form-group">
