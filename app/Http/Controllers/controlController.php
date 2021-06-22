@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\login\signupcontroller;
 use Illuminate\Http\Request;
-use App\Http\Controllers\admin\authorController;
 
 class controlController extends Controller
 {
@@ -69,11 +68,12 @@ class controlController extends Controller
             case 'loginForm':
                 return app('App\Http\Controllers\login\loginController')->authenticate($request);
                 break;
-                case 'add-author-form':
-                     return (new authorController)->store($request);
+            case 'add-author-form':
+                return app('App\Http\Controllers\admin\authorController')->store($request);
+
+                break;
             default:
 
-              
                 break;
         }
 

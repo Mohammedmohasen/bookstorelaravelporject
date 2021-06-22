@@ -49,9 +49,8 @@ class authorController extends Controller
         $author->BookBNumber = 0;
         $author->state = $request->has('State');
         $author->age = $request->input('Age');
-
         $author->save();
-        return view('admin.admin-add-author')->with('success','succes create author : '.$request->input('Name')) ;
+        return redirect()->back()->with('success','succes create author : '.$request->input('Name'));
          
     }
 
