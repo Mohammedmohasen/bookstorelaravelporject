@@ -16,10 +16,6 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 //get route we are put it here for more regular code and the right thing in the laravel put the  gt code before the resource route
-Route::get('index', function () {
-    return view('admin.admin-add-author');
-});
-
 
 Route::get('/login', 'controlController@index')->name('login');
 Route::get('/recover', 'controlController@index')->name('recover');
