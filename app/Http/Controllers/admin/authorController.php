@@ -42,7 +42,9 @@ class authorController extends Controller
             'Email' => ['required', 'min:8', 'email']
 
         ]);
-
+       $this->validate($request,[
+           'search'=>'required'
+       ]);
         $author = new author();
         $author->name= $request->input('Name');
         $author->email = $request->input('Email');

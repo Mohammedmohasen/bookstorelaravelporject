@@ -17,25 +17,20 @@ class controlController extends Controller
         $url = url()->current();
         $http = "http://127.0.0.1:8000";
         switch ($url) {
-            case $http:
+            case $url . '/login':
                 return view('login.pages-login');
                 break;
-            case $http . '/login':
-                return view('login.pages-login');
-                break;
-            case $http . '/recover':
-                return view('login.pages-forgot-password');
-            case $http . '/signup':
+            case $url . '/signup':
                 return view('login.pages-register-boxed');
                 break;
-            case $http . '/index':
+            case $url . '/index':
                 return view('customer.home-page.index');
                 break;
-            case $http . '/book':
+            case $url . '/book':
                 return view('customer.home-page.book');
                 break;
             default:
-                return $url;
+             return view('login.pages-login');
                 break;
         }
     }
