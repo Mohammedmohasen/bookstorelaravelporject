@@ -103,22 +103,25 @@
                                  <label>Book Author:</label>
                                  <select class="form-control" id="exampleFormControlSelect2">
                                     <option selected="" disabled="">Book Author</option>
-                                    <option>                   @if(count($author) > 0)
-    @foreach($author as $authors)
-      <option value="{{$authors->id}}">{{$authors->name}}</option>
-    @endforeach
-  @endif</option>
+                                                @if(count($author) > 0)
+                                                     @foreach($author as $authors)
+                                     <option value="{{$authors->id}}">{{$authors->name}}</option>
+                                                     @endforeach
+                                                 @endif
+                                    </option>
                                  </select>
                               </div>
                                 <div class="form-group">
                                  <label>Book publishing home:</label>
                                  <select class="form-control" id="exampleFormControlSelect2">
                                     <option selected="" disabled="">publishing home</option>
-                                   <option>                   @if(count($PublishingHouse) > 0)
-    @foreach($PublishingHouse as $PublishingHouses)
-      <option value="{{$PublishingHouses->id}}">{{$PublishingHouses->publishingHouseName}}</option>
-    @endforeach
-  @endif</option>
+
+                                       @if(count($PublishingHouse) > 0)
+                                                 @foreach($PublishingHouse as $PublishingHouses)
+                                                         <option value="{{$PublishingHouses->id}}">{{$PublishingHouses->publishingHouseName}}</option>
+                                                 @endforeach
+                                       @endif
+                                    </option>
                                  </select>
                               </div>
 
