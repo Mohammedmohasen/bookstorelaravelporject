@@ -136,8 +136,8 @@ $author=author::all('id', 'name');
 $Categorie=Categorie::all('id', 'name');
 $PublishingHouse=PublishingHouse::all('id', 'publishingHouseName');
    return view('admin.admin-add-book')
-   ->with()
-   ->with()
-   ->with();
+   ->with('author',$author)
+   ->with('Categorie',$Categorie)
+   ->with('PublishingHouse',$PublishingHouse);
 }
 }
