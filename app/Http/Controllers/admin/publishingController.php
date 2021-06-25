@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\admin;
-
+use App\Models\admin\PublishingHouse;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -35,7 +35,20 @@ class publishingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $this->validate($request, [
+    'name' => ['required', 'min:5'],
+    'siteName' => ['required','url'],
+]);
+
+$PublishingHouse = new PublishingHouse();
+$PublishingHouse->publishingHouseName = $request->input('name');
+$PublishingHouse->siteName = $request->input('siteName');
+$PublishingHouse->bookNumber = 0;
+$PublishingHouse->save();
+//return redirect(view(''))->with('success','succes create author : '.$request->input('Name'));
+return redirect()->back()->with('success', 'succes create Publishing House : ' . $request->input('name'));
+
     }
 
     /**

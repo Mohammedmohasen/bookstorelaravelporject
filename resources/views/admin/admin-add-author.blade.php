@@ -19,7 +19,7 @@
 
       <link rel="stylesheet" href="{{ asset('admin/css/remixicon.css') }}">
 
-   
+
 
 
    </head>
@@ -55,21 +55,22 @@
                      <li>
                         <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Shop</span></i></a>
                         <ul id="dashboard" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                           <li><a href="index.html"><i class="las la-house-damage"></i>BOOKS</a></li>
-                           <li><a href="category.html"><i class="ri-function-line"></i>Category</a></li>
-                           <li><a href="book-page.html"><i class="ri-book-line"></i>AUTHER</a></li>
-                           <li><a href="book-pdf.html"><i class="ri-file-pdf-line"></i>publishing house</a></li>
-                           <li><a href="Checkout.html"><i class="ri-checkbox-multiple-blank-line"></i>COMMETNT</a></li>
+                           <li><a href="index.html"></i>BOOKS</a></li>
+                           <li><a href="category.html">Category</a></li>
+                           <li><a href="book-page.html">AUTHER</a></li>
+                           <li><a href="book-pdf.html">publishing house</a></li>
+                           <li><a href="Checkout.html">COMMETNT</a></li>
 
                         </ul>
                      </li>
                      <li class="active active-menu">
                         <a href="#admin" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Admin</span></i></a>
                         <ul id="admin" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
-                           <li><a href="admin-dashboard.html"><i class="las la-house-damage"></i>ADD publishing house</a></li>
+                           <li><a href="{{ route('add-publishing-house') }}">ADD publishing house</a></li>
                            <li><a href="{{ route('add-category')}}">ADD Books Category</a></li>
-                           <li class="active"><a href="admin-author.html"><i class="ri-book-line"></i>ADD Author</a></li>
-                           <li><a href="admin-books.html"><i class="ri-file-pdf-line"></i>ADD Books</a></li>
+                           <li class="active"><a href="{{ route('add-author')}}">ADD Author</a></li>
+                           <li><a href="{{ route('add-BOOKS')}}">ADD Books</a></li>
+                       
                         </ul>
                      </li>
                   </ul>

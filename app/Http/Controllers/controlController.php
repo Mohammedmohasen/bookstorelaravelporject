@@ -16,7 +16,7 @@ class controlController extends Controller
     {
         $url = url()->current();
 
-        $http = 'http://'.$_SERVER['HTTP_HOST'].'/';
+        $http = 'http://' . $_SERVER['HTTP_HOST'] . '/';
 
         switch ($url) {
             case $http . 'login':
@@ -32,7 +32,7 @@ class controlController extends Controller
                 return view('customer.home-page.book');
                 break;
             default:
-             return view('login.pages-login');
+                return view('login.pages-login');
                 break;
         }
     }
@@ -61,16 +61,17 @@ class controlController extends Controller
             case 'register':
                 return (new login\signupcontroller)->store($request);
                 break;
-
             case 'loginForm':
                 return app('App\Http\Controllers\login\loginController')->authenticate($request);
                 break;
             case 'add-author-form':
                 return app('App\Http\Controllers\admin\authorController')->store($request);
-
                 break;
-                case 'add-Categories':
-                    return app('App\Http\Controllers\admin\categoriesController')->store($request);
+            case 'add-Categories':
+                return app('App\Http\Controllers\admin\categoriesController')->store($request);
+                break;
+            case 'add-publishing-house':
+                return app('App\Http\Controllers\admin\publishingController')->store($request);
             default:
 
                 break;

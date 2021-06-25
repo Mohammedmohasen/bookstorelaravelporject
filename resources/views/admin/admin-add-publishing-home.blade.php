@@ -66,10 +66,11 @@
                      <li class="active active-menu">
                         <a href="#admin" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Admin</span></i></a>
                         <ul id="admin" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
-                              <li><a href="{{ route('add-publishing-house') }}">ADD publishing house</a></li>
-                           <li class="active"><a href="{{ route('add-category')}}">ADD Books Category</a></li>
-                           <li ><a href="{{ route('add-author')}}">ADD Author</a></li>
+                             <li class="active><a href="{{ route('add-publishing-house') }}">ADD publishing house</a></li>
+                           <li><a href="{{ route('add-category')}}">ADD Books Category</a></li>
+                           <li "><a href="{{ route('add-author')}}">ADD Author</a></li>
                            <li><a href="{{ route('add-BOOKS')}}">ADD Books</a></li>
+                       
                         </ul>
                      </li>
                   </ul>
@@ -88,21 +89,21 @@
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                            <div class="iq-header-title">
-                              <h4 class="card-title">Add category</h4>
+                              <h4 class="card-title">Add Publishing House</h4>
                            </div>
                         </div>
                         <div class="iq-card-body">
                              @include('include.massege')
                          <form method="POST" action="{{ action('controlController@store') }}">
                                @csrf
-                               <input type="hidden" name="requestName" value="add-Categories"/>
+                               <input type="hidden" name="requestName" value="add-publishing-house"/>
                               <div class="form-group">
-                                 <label>Category Name:</label>
+                                 <label>Publishing House Name:</label>
                                  <input type="text" name="name"class="form-control">
                               </div>
                               <div class="form-group">
-                                 <label>Category Description:</label>
-                                 <textarea name="Describe"  class="form-control" rows="4"></textarea>
+                                 <label>Publishing House SITE:</label>
+                                 <input type="url" name="siteName"  class="form-control" rows="4"/>
                               </div>
                               <button type="submit" class="btn btn-primary">Submit</button>
                               <button type="reset" class="btn btn-danger">Reset</button>

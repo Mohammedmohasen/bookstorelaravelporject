@@ -36,7 +36,7 @@ class logincontroller extends Controller
 
 
             $request->session()->regenerate();
-            return redirect('add-author')->with('success','success');
+            return redirect('add-author')->with('success','login ');
         }
 
         return back()->withErrors([

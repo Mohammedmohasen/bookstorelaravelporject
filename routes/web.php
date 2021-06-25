@@ -21,16 +21,24 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/login', 'controlController@index')->name('login');
 Route::get('/signup', 'controlController@index')->name('signup');
 
-
 //admin add route 
-
+///add author 
 Route::get('/add-author',function () {
     return view('admin.admin-add-author');
 })->name('add-author');
+////////add categiry
 Route::get('/add-category',function () {
     return view('admin.admin-add-category');
 })->name('add-category');
-
+////////add publishing home 
+Route::get('/add-publishing-house',function () {
+    return view('admin.admin-add-category');
+})->name('add-publishing-house');
+////////add book 
+Route::get('/add-BOOKS',function () {
+    return view('admin.admin-add-book');
+})->name('add-BOOKS');
+/////////////////////////////////////////// resource controller 
 
 Route::resource('/','controlController');
 

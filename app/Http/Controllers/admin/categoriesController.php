@@ -36,10 +36,8 @@ class categoriesController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-    'Name' => ['required', 'min:5', 'max:20'],
-    'Age' => ['required', 'numeric', 'min:18'],
-    'Email' => ['required', 'min:8', 'email'],
-
+    'name' => ['required', 'min:5', 'max:20'],
+    'Describe' => ['required','min:5'],
 ]);
 
 $Categorie = new Categorie();
@@ -48,7 +46,7 @@ $Categorie->Describe = $request->input('Describe');
 $Categorie->NumberOfBook = 0;
 $Categorie->save();
 //return redirect(view(''))->with('success','succes create author : '.$request->input('Name'));
-return redirect()->back()->with('success', 'succes create author : ' . $request->input('Name'));
+return redirect()->back()->with('success', 'succes create Categorie : ' . $request->input('name'));
 
     }
 
