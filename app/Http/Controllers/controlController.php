@@ -74,6 +74,9 @@ class controlController extends Controller
                 break;
             case 'add-publishing-house':
                 return app('App\Http\Controllers\admin\publishingController')->store($request);
+                break;
+            case 'add-book':
+                return  app('App\Http\Controllers\admin\booksController')->store($request);
             default:
 
                 break;

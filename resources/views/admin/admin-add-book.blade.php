@@ -82,15 +82,24 @@
                            </div>
                         </div>
                         <div class="iq-card-body">
-                           <form action="admin-books.html">
+                           <form method="POST" action="{{ action('controlController@store') }}">
+                               <input type="hidden" name="requestName" value="add-book"/>
                                @csrf
                               <div class="form-group">
                                  <label>Book Name:</label>
-                                 <input type="text" class="form-control">
+                                 <input type="TEXT" name="NAME" class="form-control">
+                              </div>
+                               <div class="form-group">
+                                 <label>Book ISBN:</label>
+                                 <input type="text" name="ISBN" class="form-control">
+                              </div>
+                               <div class="form-group">
+                                 <label>Book releae year:</label>
+                                 <input type="date" name="release"class="form-control">
                               </div>
                               <div class="form-group">
                                  <label>Book Category:</label>
-                                 <select class="form-control" id="exampleFormControlSelect1">
+                                 <select class="form-control" id="exampleFormControlSelect1" name="bookCategory">
                                     <option selected="" disabled="">Book Category</option>
                                                     @if(count($Categorie) > 0)
                                                            @foreach($Categorie as $Categories)
@@ -101,7 +110,7 @@
                               </div>
                               <div class="form-group">
                                  <label>Book Author:</label>
-                                 <select class="form-control" id="exampleFormControlSelect2">
+                                 <select class="form-control" id="exampleFormControlSelect2" name="bookAuthor">
                                     <option selected="" disabled="">Book Author</option>
                                                 @if(count($author) > 0)
                                                      @foreach($author as $authors)
@@ -113,7 +122,7 @@
                               </div>
                                 <div class="form-group">
                                  <label>Book publishing home:</label>
-                                 <select class="form-control" id="exampleFormControlSelect2">
+                                 <select class="form-control" id="exampleFormControlSelect2" name="bookpublishinghome">
                                     <option selected="" disabled="">publishing home</option>
 
                                        @if(count($PublishingHouse) > 0)
