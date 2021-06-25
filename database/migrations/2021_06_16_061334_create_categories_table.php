@@ -19,6 +19,7 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('NumberOfBook');
+            $table->string('Describe');
             $table->timestamps();
             $table->softDeletes();
         });

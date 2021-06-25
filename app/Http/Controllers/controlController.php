@@ -67,6 +67,8 @@ class controlController extends Controller
                 return app('App\Http\Controllers\admin\authorController')->store($request);
 
                 break;
+                case 'add-Categories':
+                    return app('App\Http\Controllers\admin\categoriesController')->store($request);
             default:
 
                 break;

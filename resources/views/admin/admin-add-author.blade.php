@@ -67,7 +67,7 @@
                         <a href="#admin" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Admin</span></i></a>
                         <ul id="admin" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
                            <li><a href="admin-dashboard.html"><i class="las la-house-damage"></i>ADD publishing house</a></li>
-                           <li><a href="admin-category.html"><i class="ri-function-line"></i>ADD Books Category</a></li>
+                           <li><a href="{{ route('add-category')}}">ADD Books Category</a></li>
                            <li class="active"><a href="admin-author.html"><i class="ri-book-line"></i>ADD Author</a></li>
                            <li><a href="admin-books.html"><i class="ri-file-pdf-line"></i>ADD Books</a></li>
                         </ul>
