@@ -15,18 +15,20 @@ class controlController extends Controller
     public function index()
     {
         $url = url()->current();
-        $http = "http://127.0.0.1:8000";
+
+        $http = 'http://'.$_SERVER['HTTP_HOST'].'/';
+       
         switch ($url) {
-            case $url . '/login':
+            case $url . 'login':
                 return view('login.pages-login');
                 break;
-            case $url . '/signup':
+            case $url . 'signup':
                 return view('login.pages-register-boxed');
                 break;
             case $url . '/index':
                 return view('customer.home-page.index');
                 break;
-            case $url . '/book':
+            case $url . 'book':
                 return view('customer.home-page.book');
                 break;
             default:

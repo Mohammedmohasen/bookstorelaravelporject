@@ -65,15 +65,15 @@
                                 <span class="d-block">Welcome back,</span>
                                 <span>Please sign in to your account.</span>
                             </h4>
-                            <h6 class="mt-3">No account? <a href="{{ route('signup') }}" class="[]text-primary">Sign up now</a></h6>
+                            <h6 class="mt-3">No account? <a href="{{ url('/signup')}}" class="[]text-primary">Sign up now</a></h6>
                             <div class="divider row"></div>
                             <div>
-                             
+
                                    <form method="POST" action="{{ action('controlController@store') }}">
                                       <input type="hidden" name="requestName" value="loginForm"/>
                                     @include('include.massege')
                                      @csrf
-                               
+
                                     <div class="form-row">
                                         <div class="col-md-6">
                                             <div class="position-relative form-group">
@@ -95,7 +95,7 @@
                                     <div class="divider row"></div>
                                     <div class="d-flex align-items-center">
                                         <div class="ml-auto">
-                                          
+
                                             <input type="submit" class="btn btn-primary btn-lg" value="go to Dashboard"/>
                                         </div>
                                     </div>
