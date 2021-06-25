@@ -35,9 +35,7 @@ Route::get('/add-publishing-house',function () {
     return view('admin.admin-add-publishing-home');
 })->name('add-publishing-house');
 ////////add book
-Route::get('/add-BOOKS',function () {
-    return view('admin.admin-add-book');
-})->name('add-BOOKS');
+Route::get('/add-BOOKS','controlController@GetParentInformation')->name('add-BOOKS');
 /////////////////////////////////////////// resource controller
 
 Route::resource('/','controlController');

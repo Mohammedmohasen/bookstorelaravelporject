@@ -92,48 +92,33 @@
                                  <label>Book Category:</label>
                                  <select class="form-control" id="exampleFormControlSelect1">
                                     <option selected="" disabled="">Book Category</option>
-                                    <option>General Books</option>
-                                    <option>History Books</option>
-                                    <option>Horror Story</option>
-                                    <option>Arts Books</option>
-                                    <option>Film & Photography</option>
-                                    <option>Business & Economics</option>
-                                    <option>Comics & Mangas</option>
-                                    <option>Computers & Internet</option>
-                                    <option> Sports</option>
-                                    <option> Travel & Tourism</option>
+                                    @if(count($Categorie) > 0)
+    @foreach($Categorie as $Categories)
+      <option value="{{$Categories->id}}">{{$Categories->name}}</option>
+    @endforeach
+  @endif
                                  </select>
                               </div>
                               <div class="form-group">
                                  <label>Book Author:</label>
                                  <select class="form-control" id="exampleFormControlSelect2">
                                     <option selected="" disabled="">Book Author</option>
-                                    <option>Jhone Steben</option>
-                                    <option>John Klok</option>
-                                    <option>Ichae Semos</option>
-                                    <option>Jules Boutin</option>
-                                    <option>Kusti Franti</option>
-                                    <option>David King</option>
-                                    <option>Henry Jurk</option>
-                                    <option>Attilio Marzi</option>
-                                    <option>Argele Intili</option>
-                                    <option>Attilio Marzi</option>
+                                    <option>                   @if(count($author) > 0)
+    @foreach($author as $authors)
+      <option value="{{$authors->id}}">{{$authors->name}}</option>
+    @endforeach
+  @endif</option>
                                  </select>
                               </div>
                                 <div class="form-group">
                                  <label>Book publishing home:</label>
                                  <select class="form-control" id="exampleFormControlSelect2">
                                     <option selected="" disabled="">publishing home</option>
-                                    <option>Jhone Steben</option>
-                                    <option>John Klok</option>
-                                    <option>Ichae Semos</option>
-                                    <option>Jules Boutin</option>
-                                    <option>Kusti Franti</option>
-                                    <option>David King</option>
-                                    <option>Henry Jurk</option>
-                                    <option>Attilio Marzi</option>
-                                    <option>Argele Intili</option>
-                                    <option>Attilio Marzi</option>
+                                   <option>                   @if(count($PublishingHouse) > 0)
+    @foreach($PublishingHouse as $PublishingHouses)
+      <option value="{{$PublishingHouses->id}}">{{$PublishingHouses->publishingHouseName}}</option>
+    @endforeach
+  @endif</option>
                                  </select>
                               </div>
 
