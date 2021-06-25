@@ -12,4 +12,5 @@ class books extends Model
        protected $fillable = ['name', 'email', 'mobile'];  
        protected $dates = [ 'deleted_at' ];
        public $timestamps = true;
+       
 }

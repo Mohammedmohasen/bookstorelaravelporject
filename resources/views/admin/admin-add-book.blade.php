@@ -82,6 +82,7 @@
                            </div>
                         </div>
                         <div class="iq-card-body">
+                                @include('include.massege')
                            <form method="POST" action="{{ action('controlController@store') }}">
                                <input type="hidden" name="requestName" value="add-book"/>
                                @csrf
@@ -92,10 +93,6 @@
                                <div class="form-group">
                                  <label>Book ISBN:</label>
                                  <input type="text" name="ISBN" class="form-control">
-                              </div>
-                               <div class="form-group">
-                                 <label>Book releae year:</label>
-                                 <input type="date" name="release"class="form-control">
                               </div>
                               <div class="form-group">
                                  <label>Book Category:</label>

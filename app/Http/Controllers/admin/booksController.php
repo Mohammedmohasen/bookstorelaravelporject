@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\admin\books;
+use Carbon\Carbon;
 class booksController extends Controller
 {
     /**
@@ -35,10 +36,10 @@ class booksController extends Controller
      */
     public function store(Request $request)
     {
+        $dt = Carbon::create();
         $this->validate($request, [
     'NAME' => ['required', 'min:5', 'max:20'],
     'ISBN' => ['required',  'min:8'],
-    'release' => ['required', 'date'],
     'bookCategory'=>['required'],
    'bookAuthor' =>['required'],
    'bookpublishinghome' =>['required'],
@@ -47,13 +48,12 @@ class booksController extends Controller
 $books = new books();
 $books->name = $request->input('NAME');
 $books->isbn = $request->input('ISBN');
-$books->releaseYear = $request->has('release');
+$books->releaseYear =  $dt->today();
 $books->authorId = $request->input('bookAuthor');
 $books->categoriesId = $request->input('bookCategory');
 $books->publishingHousesId = $request->input('bookpublishinghome');
 $books->save();
-//return redirect(view(''))->with('success','succes create books : '.$request->input('Name'));
-return redirect()->back()->with('success', 'succes create book : ' . $request->input('NAME'));
+return redirect()->back()->with('success', 'succes create book : ' .  $request->input('NAME'));
 
     }
 
