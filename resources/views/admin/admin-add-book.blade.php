@@ -92,11 +92,11 @@
                                  <label>Book Category:</label>
                                  <select class="form-control" id="exampleFormControlSelect1">
                                     <option selected="" disabled="">Book Category</option>
-                                    @if(count($Categorie) > 0)
-    @foreach($Categorie as $Categories)
-      <option value="{{$Categories->id}}">{{$Categories->name}}</option>
-    @endforeach
-  @endif
+                                                    @if(count($Categorie) > 0)
+                                                           @foreach($Categorie as $Categories)
+                                                                   <option value="{{$Categories->id}}">{{$Categories->name}}</option>
+                                                          @endforeach
+                                                   @endif
                                  </select>
                               </div>
                               <div class="form-group">
