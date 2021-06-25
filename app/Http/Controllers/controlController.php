@@ -17,18 +17,18 @@ class controlController extends Controller
         $url = url()->current();
 
         $http = 'http://'.$_SERVER['HTTP_HOST'].'/';
-       
+
         switch ($url) {
-            case $url . 'login':
+            case $http . 'login':
                 return view('login.pages-login');
                 break;
-            case $url . 'signup':
+            case $http . 'signup':
                 return view('login.pages-register-boxed');
                 break;
-            case $url . '/index':
+            case $http . '/index':
                 return view('customer.home-page.index');
                 break;
-            case $url . 'book':
+            case $http . 'book':
                 return view('customer.home-page.book');
                 break;
             default:
