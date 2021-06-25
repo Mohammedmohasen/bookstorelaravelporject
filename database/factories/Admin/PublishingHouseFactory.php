@@ -2,17 +2,17 @@
 
 namespace Database\Factories\admin;
 
-use App\Models\admin\publishingHouses;
+use App\Models\admin\PublishingHouse;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class publishingHousesFactory extends Factory
+class PublishingHouseFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = publishingHouses::class;
+    protected $model = PublishingHouse::class;
 
     /**
      * Define the model's default state.

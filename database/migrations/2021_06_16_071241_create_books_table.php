@@ -28,7 +28,7 @@ class CreateBooksTable extends Migration
             $table->timestamps();
             $table->foreignId('authorId')->constrained('authors');
             $table->foreignId('categoriesId')->constrained('categories');
-            $table->foreignId('publishingHousesId')->constrained('publishing-houses');
+            $table->foreignId('publishingHousesId')->constrained('publishing_houses');
             $table->softDeletes();
         });
         /*

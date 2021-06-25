@@ -24,12 +24,8 @@
 
    </head>
    <body>
-      <!-- loader Start -->
-      <div>
-         <div id="loading-center">
-         </div>
-      </div>
-      <!-- loader END -->
+
+
       <!-- Wrapper Start -->
       <div class="wrapper">
          <!-- Sidebar  -->
@@ -66,7 +62,7 @@
                      <li class="active active-menu">
                         <a href="#admin" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Admin</span></i></a>
                         <ul id="admin" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
-                             <li class="active><a href="{{ route('add-publishing-house') }}">ADD publishing house</a></li>
+                             <li class="active"><a href="{{ route('add-publishing-house') }}">ADD publishing house</a></li>
                            <li><a href="{{ route('add-category')}}">ADD Books Category</a></li>
                            <li "><a href="{{ route('add-author')}}">ADD Author</a></li>
                            <li><a href="{{ route('add-BOOKS')}}">ADD Books</a></li>
