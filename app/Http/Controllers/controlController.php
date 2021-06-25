@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\login\signupcontroller;
 use Illuminate\Http\Request;
-
+use App\Models\admin\author;
+use App\Models\admin\Categorie;
+use App\Models\admin\PublishingHouse;
 class controlController extends Controller
 {
     /**
@@ -123,5 +125,19 @@ class controlController extends Controller
     {
         //
     }
+///CUSTOM METHOID USE FOR SPACIFEC THINKS
+public function GetParentInformation()
+{
+    $author=new author();
+    $Categorie=new Categorie();
+    $PublishingHouse=new PublishingHouse();
 
+$author=author::all('id', 'name');
+$Categorie=Categorie::all('id', 'name');
+$PublishingHouse=PublishingHouse::all('id', 'publishingHouseName');
+   return view('admin.admin-add-book')
+   ->with()
+   ->with()
+   ->with();
+}
 }

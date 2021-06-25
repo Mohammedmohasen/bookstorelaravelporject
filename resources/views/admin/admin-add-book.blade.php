@@ -59,7 +59,7 @@
                            <li><a href="{{ route('add-category')}}">ADD Books Category</a></li>
                            <li "><a href="{{ route('add-author')}}">ADD Author</a></li>
                            <li class="active"><a href="{{ route('add-BOOKS')}}">ADD Books</a></li>
-                       
+
                         </ul>
                      </li>
                   </ul>
@@ -136,9 +136,9 @@
                                     <option>Attilio Marzi</option>
                                  </select>
                               </div>
-                            
-                          
-                          
+
+
+
                               <button type="submit" class="btn btn-primary">Submit</button>
                               <button type="reset" class="btn btn-danger">Reset</button>
                            </form>
@@ -150,7 +150,7 @@
          </div>
       </div>
       <!-- Wrapper END -->
-    
+
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
