@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/login', 'controlController@index')->name('login');
 Route::get('/signup', 'controlController@index')->name('signup');
+Route::get('/add-author',function () {
+    return view('admin.admin-add-author');
+});
 Route::resource('/','controlController');
 
 

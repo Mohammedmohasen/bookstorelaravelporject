@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Auth;
 
 class logincontroller extends Controller
 {
+    function index() {
+        return view('admin.admin-add-author');
+    }
     public function __construct()
     {
 
@@ -29,11 +32,11 @@ class logincontroller extends Controller
         ]);
         $remember =$request->has('check');
         if (Auth::attempt($user,$remember)) {
-        
+         
 
 
             $request->session()->regenerate();
-            return view('admin.admin-add-author');
+            return redirect('add-author')->with('success','success');
         }
 
         return back()->withErrors([
@@ -41,6 +44,6 @@ class logincontroller extends Controller
             'password' => 'wrong password',
         ]);
 
-       return redirect()->back();
+    return redirect('add-author');
     }
 }
