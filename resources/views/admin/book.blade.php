@@ -102,10 +102,9 @@ Version: 1.0
 
 			<div class="book_maindiv">
 
- @if(count($showbooks) > 0)
-                             @foreach($showbooks as $showbookss)
-                                  @if(count($author) > 0)
-                                                @if(count($PublishingHouse) > 0)
+ @if(count($books) > 0)
+                             @foreach($books as $bookss)
+                                
                                                        
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="book_images">
@@ -116,14 +115,15 @@ Version: 1.0
 							</ul>
 						</div>
 						<div class="book_text">
-							<h3><a href="book_inside.html">{{$showbookss->name}}</a></h3>
+							<h3><a href="book_inside.html">{{$bookss->name}}</a></h3>
 							<span>
                           
-                           aaaaaaaaaaaaaaa
+                         {{$bookss->author->name}}
                             <p >
                        
-                           ppppppppppppppp</p></span> {{$showbookss->releaseYear}}
-					 
+                           {{$bookss->PublishingHouse->publishingHouseName}}</p></span> 
+						   {{$bookss->releaseYear}}
+					       {{$bookss->Categorie->name}}
                         </div>
 
 					</div>

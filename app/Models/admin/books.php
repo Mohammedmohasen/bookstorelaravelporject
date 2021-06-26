@@ -16,16 +16,16 @@ class books extends Model
        protected $dates = [ 'deleted_at' ];
        public $timestamps = true;
 
-       public function authorrelation()
+       public function author()
     {
-        return $this->belongsTo(author::class);
+        return $this->belongsTo(author::class,'authorId');
     }
-    public function Categorierelation()
+    public function Categorie()
     {
-        return $this->belongsTo(Categorie::class);
+        return $this->belongsTo(Categorie::class,'categoriesId');
     }
-    public function PublishingHouserelation()
+    public function PublishingHouse()
     {
-        return $this->belongsTo(PublishingHouse::class);
+        return $this->belongsTo(PublishingHouse::class,'publishingHousesId');
     }
 }

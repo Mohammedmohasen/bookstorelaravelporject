@@ -107,8 +107,8 @@ return redirect()->back()->with('success', 'succes create book : ' .  $request->
  public function showall()
     {
       $books=new books();
-      $books=books::with('authorrelation')->with('Categorierelation')->with('PublishingHouserelation')->select('*')->get();
-      dd( $books);
-      //return view('admin.book')->with('books',$books);
+      $books=books::with('author')->with('Categorie')->with('PublishingHouse')->select('*')->get();
+      //dd( $books);
+      return view('admin.book')->with('books',$books);
     }
 }
