@@ -44,7 +44,7 @@
                      <li>
                         <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Shop</span></i></a>
                         <ul id="dashboard" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                                   <li><a href="index.html"></i>BOOKS</a></li>
+                                   <li><a href="{{ route('book') }}"></i>BOOKS</a></li>
                            <li><a href="category.html">Category</a></li>
                            <li><a href="book-page.html">AUTHER</a></li>
                            <li><a href="book-pdf.html">publishing house</a></li>

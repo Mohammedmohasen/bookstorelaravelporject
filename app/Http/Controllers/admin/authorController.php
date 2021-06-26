@@ -98,4 +98,10 @@ class authorController extends Controller
     {
         //
     }
+      public function showall()
+    {
+      $author = new author();
+      $author=author::all();
+      return view('admin.admin-author')->with('author',$author);
+    }
 }

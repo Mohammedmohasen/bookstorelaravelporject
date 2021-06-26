@@ -25,10 +25,14 @@ class CreateBooksTable extends Migration
             $table->string('name');
             $table->string('isbn')->unique();
             $table->date('releaseYear');
+          $table->unsignedBigInteger('authorId');
+        $table->unsignedBigInteger('categoriesId');
+       $table->unsignedBigInteger('publishingHousesId');
             $table->timestamps();
-            $table->foreignId('authorId')->constrained('authors');
-            $table->foreignId('categoriesId')->constrained('categories');
-            $table->foreignId('publishingHousesId')->constrained('publishing_houses');
+        
+                $table->foreign('authorId')->references('id')->on('authors');
+                 $table->foreign('categoriesId')->references('id')->on('categories');
+                  $table->foreign('publishingHousesId')->references('id')->on('publishing_houses');
             $table->softDeletes();
         });
         /*

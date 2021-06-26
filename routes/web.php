@@ -2,8 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controller\controlController;
-use Illuminate\Routing\RouteAction;
-use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +19,14 @@ use Illuminate\Support\Facades\Auth;
 //login route
 Route::get('/login', 'controlController@index')->name('login');
 Route::get('/signup', 'controlController@index')->name('signup');
-Route::get('/index', function () {
-    return view('admin.book');
-});
+//////////////show book
+Route::get('/book', 'controlController@index')->name('book');
+////////////////////show category
+Route::get('/category', 'controlController@index')->name('category');
+//////////////////show author
+Route::get('/author', 'controlController@index')->name('author');
+///////////////show publishing
+Route::get('/publishing', 'controlController@index')->name('publishing');
 //admin add route
 ///add author
 Route::get('/add-author',function () {
@@ -39,7 +43,6 @@ Route::get('/add-publishing-house',function () {
 ////////add book
 Route::get('/add-BOOKS','controlController@GetParentInformation')->name('add-BOOKS');
 /////////////////////////////////////////// resource controller
-
 Route::resource('/','controlController');
 
 

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\admin\author;
 use App\Models\admin\Categorie;
 use App\Models\admin\PublishingHouse;
+use App\Models\admin\books;
 class controlController extends Controller
 {
     /**
@@ -31,8 +32,15 @@ class controlController extends Controller
                 return view('customer.home-page.index');
                 break;
             case $http . 'book':
-                return view('customer.home-page.book');
+              return app('App\Http\Controllers\admin\booksController')->showbooks();
+              case $http.'category' : 
+                return app('App\Http\Controllers\admin\categoriesController')->showall();
                 break;
+                case $http .'author':
+                    return app('App\Http\Controllers\admin\authorController')->showall();
+                    break;
+                    case $http.'publishing':
+                         return app('App\Http\Controllers\admin\publishingController')->showall();
             default:
                 return view('login.pages-login');
                 break;
@@ -143,4 +151,5 @@ $PublishingHouse=PublishingHouse::all('id', 'publishingHouseName');
    ->with('Categorie',$Categorie)
    ->with('PublishingHouse',$PublishingHouse);
 }
+
 }

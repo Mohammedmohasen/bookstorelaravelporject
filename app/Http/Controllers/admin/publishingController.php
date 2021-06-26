@@ -96,4 +96,10 @@ return redirect()->back()->with('success', 'succes create Publishing HOME : ' . 
     {
         //
     }
+       public function showall()
+    {
+      $PublishingHouse = new PublishingHouse();
+      $PublishingHouse=PublishingHouse::all();
+      return view('admin.admin-add-publishing-home')->with('PublishingHouse',$PublishingHouse);
+    }
 }

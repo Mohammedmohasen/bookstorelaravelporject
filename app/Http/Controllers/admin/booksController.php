@@ -4,7 +4,10 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\admin\author;
+use App\Models\admin\PublishingHouse;
 use App\Models\admin\books;
+use App\Models\admin\Categorie;
 use Carbon\Carbon;
 class booksController extends Controller
 {
@@ -101,4 +104,24 @@ return redirect()->back()->with('success', 'succes create book : ' .  $request->
     {
         //
     }
+public function showbooks()
+{    
+    $showbooks=new books();
+     $showbooks = books::all();
+      $author= author::all();
+      $PublishingHouse= PublishingHouse::all();
+      $Categorie= Categorie::all();
+  
+
+
+
+  
+    
+        return view('admin.book')
+        ->with('showbooks',$showbooks)
+         ->with('author',$author)
+          ->with('PublishingHouse',$PublishingHouse)
+          ->with('Categorie',$Categorie)
+        ;
+}
 }

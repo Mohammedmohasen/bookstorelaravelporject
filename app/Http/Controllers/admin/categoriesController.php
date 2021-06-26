@@ -94,4 +94,10 @@ return redirect()->back()->with('success', 'succes create Categorie : ' . $reque
     {
         //
     }
+    public function showall()
+    {
+      $Categorie = new Categorie();
+      $Categorie=Categorie::all();
+      return view('admin.admin-category')->with('Categorie',$Categorie);
+    }
 }

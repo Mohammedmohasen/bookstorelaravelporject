@@ -56,10 +56,10 @@ Version: 1.0
 					<ul>
 
 						<li><a href="gallery.html">dashboard</a></li>
-						<li><a href="index.html">add author</a></li>
-						<li><a href="about.html">add category</a></li>
-						<li class="active"><a href="book.html">add books</a></li>
-						<li><a href="gallery.html">add PublishingHouse</a></li>
+						<li><a href="{{ route('add-author') }}">add author</a></li>
+						<li><a href="{{ route('add-category') }}">add category</a></li>
+						<li ><a href="{{ route('add-BOOKS') }}">add books</a></li>
+						<li><a href="{{ route('add-publishing-house') }}">add PublishingHouse</a></li>
 
 				</div>
 			</div>
@@ -99,7 +99,14 @@ Version: 1.0
 <div class="analyze_book_page">
 	<div class="container">
 		<div class="row">
+
 			<div class="book_maindiv">
+
+ @if(count($showbooks) > 0)
+                             @foreach($showbooks as $showbookss)
+                                  @if(count($author) > 0)
+                                                @if(count($PublishingHouse) > 0)
+                                                       
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="book_images">
 						<img src="{{ asset('customer/images/books/b1.jpg') }}" alt="" />
@@ -109,19 +116,26 @@ Version: 1.0
 							</ul>
 						</div>
 						<div class="book_text">
-							<h3><a href="book_inside.html">book name</a></h3>
-							<span>author name <p >publishingHouseName</p></span> year release 
-						</div>
+							<h3><a href="book_inside.html">{{$showbookss->name}}</a></h3>
+							<span>
+                          
+                           aaaaaaaaaaaaaaa
+                            <p >
+                       
+                           ppppppppppppppp</p></span> {{$showbookss->releaseYear}}
+					 
+                        </div>
+
 					</div>
+
+
 				</div>
-			
-			
-			
-			
-			
-			
-				
-				</div>
+                     
+               @endforeach
+                   @endif
+              </div>
+               	
+          
 				<div class="gallery_pagination">
 					<ul>
 						<li><a href="#" class="previous">Previous</a></li>
