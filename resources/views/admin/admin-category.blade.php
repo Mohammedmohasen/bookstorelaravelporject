@@ -86,8 +86,8 @@
                                     <tr>
                                         <th width="5%">No</th>
                                         <th width="20%">Category Name</th>
-                                        <th width="65%">Category Description</th>
-                                        <th width="10%">Action</th>
+                                        <th width="55%">Category Description</th>
+                                        <th width="15%">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -101,8 +101,8 @@
                                         </td>
                                         <td>
                                            <div class="flex align-items-center list-user-action">
-                                             <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="admin-add-category.html"><i class="ri-pencil-line"></i></a>
-                                             <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                             <a  data-toggle="tooltip" data-placement="top" title="" name="edit-category" value="edit-category"  data-original-title="Edit" href="/editcategory/{{$Categories->id}}">Edit</a>
+                                             <a  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#">Delete</a>
                                           </div>
                                         </td>
                                     </tr>

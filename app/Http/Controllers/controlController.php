@@ -33,7 +33,7 @@ class controlController extends Controller
                 break;
             case $http . 'book':
               return app('App\Http\Controllers\admin\booksController')->showall();
-              case $http.'category' : 
+              case $http.'category' :
                 return app('App\Http\Controllers\admin\categoriesController')->showall();
                 break;
                 case $http .'author':
@@ -54,7 +54,7 @@ class controlController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -111,7 +111,15 @@ class controlController extends Controller
      */
     public function edit($id)
     {
-        //
+           $url = url()->current();
+        $http = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+       if(strpos($_SERVER['REQUEST_URI'], 'editcategory') !== false)
+               {  return app('App\Http\Controllers\admin\categoriesController')->edit($id);}
+
+
+
+        return $url;
+
     }
 
     /**

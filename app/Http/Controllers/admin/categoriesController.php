@@ -69,7 +69,7 @@ return redirect()->back()->with('success', 'succes create Categorie : ' . $reque
      */
     public function edit($id)
     {
-        //
+        return "its a ";
     }
 
     /**
