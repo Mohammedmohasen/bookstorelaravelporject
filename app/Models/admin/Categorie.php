@@ -5,6 +5,10 @@ namespace App\Models\admin;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+
+
+
+use App\Models\admin\books;
 class Categorie extends Model
 {
     use HasFactory;
@@ -15,7 +19,7 @@ class Categorie extends Model
 
      public function books()
     {
-        return $this->hasMany('App\Models\admin\books');
+        return $this->hasMany(books::class);
     }
 
 

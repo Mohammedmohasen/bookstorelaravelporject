@@ -5,24 +5,27 @@ namespace App\Models\admin;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Models\admin\author;
+use App\Models\admin\Categorie;
+use App\Models\admin\PublishingHouse;
 class books extends Model
 {
     use HasFactory;
     use SoftDeletes;
-       protected $fillable = ['name', 'email', 'mobile'];
+       protected $fillable = ['name', 'isbn', 'releaseYear','authorId','categoriesId','publishingHousesId'];
        protected $dates = [ 'deleted_at' ];
        public $timestamps = true;
 
-       public function author()
+       public function authorrelation()
     {
-        return $this->belongsTo('App\Models\admin\author');
+        return $this->belongsTo(author::class);
     }
-    public function Categorie()
+    public function Categorierelation()
     {
-        return $this->belongsTo('App\Models\admin\Categorie');
+        return $this->belongsTo(Categorie::class);
     }
-    public function PublishingHouse()
+    public function PublishingHouserelation()
     {
-        return $this->belongsTo('App\Models\admin\PublishingHouse');
+        return $this->belongsTo(PublishingHouse::class);
     }
 }
