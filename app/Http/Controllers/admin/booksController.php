@@ -104,24 +104,11 @@ return redirect()->back()->with('success', 'succes create book : ' .  $request->
     {
         //
     }
-public function showbooks()
-{    
-    $showbooks=new books();
-     $showbooks = books::all();
-      $author= author::all();
-      $PublishingHouse= PublishingHouse::all();
-      $Categorie= Categorie::all();
-  
-
-
-
-  
-    
-        return view('admin.book')
-        ->with('showbooks',$showbooks)
-         ->with('author',$author)
-          ->with('PublishingHouse',$PublishingHouse)
-          ->with('Categorie',$Categorie)
-        ;
-}
+ public function showall()
+    {
+      $books=new books();
+      $books=books::with('author')->with('Categorie')->with('PublishingHouse')->select('*')->get();
+      dd( $books->toArray());
+      //return view('admin.book')->with('books',$books);
+    }
 }

@@ -32,7 +32,7 @@ class controlController extends Controller
                 return view('customer.home-page.index');
                 break;
             case $http . 'book':
-              return app('App\Http\Controllers\admin\booksController')->showbooks();
+              return app('App\Http\Controllers\admin\booksController')->showall();
               case $http.'category' : 
                 return app('App\Http\Controllers\admin\categoriesController')->showall();
                 break;

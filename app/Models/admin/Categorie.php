@@ -9,7 +9,14 @@ class Categorie extends Model
 {
     use HasFactory;
     use SoftDeletes;
-       protected $fillable = ['name', 'email', 'mobile'];  
+       protected $fillable = ['name', 'email', 'mobile'];
        protected $dates = [ 'deleted_at' ];
        public $timestamps = true;
+
+     public function books()
+    {
+        return $this->hasMany('App\Models\admin\books');
+    }
+
+
 }

@@ -100,6 +100,6 @@ return redirect()->back()->with('success', 'succes create Publishing HOME : ' . 
     {
       $PublishingHouse = new PublishingHouse();
       $PublishingHouse=PublishingHouse::all();
-      return view('admin.admin-add-publishing-home')->with('PublishingHouse',$PublishingHouse);
+      return view('admin.admin-publishing-home')->with('PublishingHouse',$PublishingHouse);
     }
 }
