@@ -70,7 +70,7 @@
                            <li><a href="{{ route('add-category')}}">ADD Books Category</a></li>
                            <li class="active"><a href="{{ route('add-author')}}">ADD Author</a></li>
                            <li><a href="{{ route('add-BOOKS')}}">ADD Books</a></li>
-                       
+
                         </ul>
                      </li>
                   </ul>
