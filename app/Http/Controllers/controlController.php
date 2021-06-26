@@ -8,6 +8,7 @@ use App\Models\admin\author;
 use App\Models\admin\Categorie;
 use App\Models\admin\PublishingHouse;
 use App\Models\admin\books;
+use Illuminate\Support\Facades\Route;
 class controlController extends Controller
 {
     /**
@@ -85,7 +86,8 @@ class controlController extends Controller
                 break;
             case 'add-book':
                 return  app('App\Http\Controllers\admin\booksController')->store($request);
-            default:
+
+                default:
 
                 break;
         }
@@ -111,11 +113,17 @@ class controlController extends Controller
      */
     public function edit($id)
     {
-           $url = url()->current();
-        $http = 'http://' . $_SERVER['HTTP_HOST'] . '/';
-       if(strpos($_SERVER['REQUEST_URI'], 'editcategory') !== false)
-               {  return app('App\Http\Controllers\admin\categoriesController')->edit($id);}
-
+           $url = Route::currentRouteName();
+        switch ($url) {
+            case 'edit-category':
+              return app('App\Http\Controllers\admin\categoriesController')->edit($id);
+                break;
+            
+            default:
+                # code...
+                break;
+        }
+  
 
 
         return $url;
@@ -131,7 +139,14 @@ class controlController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $check = $request['requestName'];
+         switch ($check) {
+              case 'edit-Categories':
+                 return app('App\Http\Controllers\admin\categoriesController')->update($request,$id);
+             break; 
+             default:
+                 break;
+         }
     }
 
     /**

@@ -42,6 +42,8 @@ Route::get('/add-publishing-house',function () {
 })->name('add-publishing-house');
 ////////add book
 Route::get('/add-BOOKS','controlController@GetParentInformation')->name('add-BOOKS');
+/////////edit book 
+Route::get('edit-category/{id}', 'controlController@edit')->name('edit-category');
 /////////////////////////////////////////// resource controller
 Route::resource('/','controlController');
 

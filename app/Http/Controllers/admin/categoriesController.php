@@ -69,7 +69,9 @@ return redirect()->back()->with('success', 'succes create Categorie : ' . $reque
      */
     public function edit($id)
     {
-        return "its a ";
+        $Categorie=Categorie::find($id);
+        return view('admin.admin-edit-category')->with('Categorie',$Categorie);
+    //  dd($Categorie);
     }
 
     /**

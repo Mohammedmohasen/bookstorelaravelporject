@@ -6,7 +6,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>Booksto - Responsive Bootstrap 4 Admin Dashboard Template</title>
       <!-- Favicon -->
-<link rel="stylesheet" href="{{ asset('admin/css/bootstrap.min.css') }}">
+      <link rel="shortcut icon" href="{{ asset('admin/images/favicon.ico') }}" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{{ asset('admin/css/bootstrap.min.css') }}">
       <link rel="stylesheet" href="{{ asset('admin/css/dataTables.bootstrap4.min.css') }}">
       <!-- Typography CSS -->
       <link rel="stylesheet" href="{{ asset('admin/css/typography.css') }}">
@@ -15,14 +17,23 @@
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="{{ asset('admin/css/responsive.css') }}">
 
+      <link rel="stylesheet" href="{{ asset('admin/css/remixicon.css') }}">
+
+
+
+
    </head>
    <body>
-
+      <!-- loader Start -->
+      <div>
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
       <!-- Wrapper Start -->
       <div class="wrapper">
          <!-- Sidebar  -->
-         <!-- Sidebar  -->
-          <div class="iq-sidebar">
+         <div class="iq-sidebar">
             <div class="iq-sidebar-logo d-flex justify-content-between">
                <a href="index.html" class="header-logo">
                   <img class="img-fluid rounded-normal" alt="">
@@ -44,22 +55,20 @@
                      <li>
                         <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Shop</span></i></a>
                         <ul id="dashboard" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                                   <li><a href="{{ route('book') }}"></i>BOOKS</a></li>
+                                  <li><a href="{{ route('book') }}"></i>BOOKS</a></li>
                            <li><a href="category.html">Category</a></li>
                            <li><a href="book-page.html">AUTHER</a></li>
                            <li><a href="book-pdf.html">publishing house</a></li>
                            <li><a href="Checkout.html">COMMETNT</a></li>
-
                         </ul>
                      </li>
                      <li class="active active-menu">
                         <a href="#admin" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Admin</span></i></a>
                         <ul id="admin" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
-                             <li ><a href="{{ route('add-publishing-house') }}">ADD publishing house</a></li>
-                           <li><a href="{{ route('add-category')}}">ADD Books Category</a></li>
-                           <li "><a href="{{ route('add-author')}}">ADD Author</a></li>
-                           <li class="active"><a href="{{ route('add-BOOKS')}}">ADD Books</a></li>
-
+                              <li><a href="{{ route('add-publishing-house') }}">ADD publishing house</a></li>
+                           <li class="active"><a href="{{ route('add-category')}}">ADD Books Category</a></li>
+                           <li ><a href="{{ route('add-author')}}">ADD Author</a></li>
+                           <li><a href="{{ route('add-BOOKS')}}">ADD Books</a></li>
                         </ul>
                      </li>
                   </ul>
@@ -67,6 +76,9 @@
 
             </div>
          </div>
+         <!-- TOP Nav Bar -->
+
+         <!-- TOP Nav Bar END -->
          <!-- Page Content  -->
          <div id="content-page" class="content-page">
             <div class="container-fluid">
@@ -75,42 +87,32 @@
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                            <div class="iq-header-title">
-                              <h4 class="card-title">Category Lists</h4>
+                              <h4 class="card-title">Editt category</h4>
                            </div>
-
                         </div>
                         <div class="iq-card-body">
-                           <div class="table-responsive">
-                              <table class="data-tables table table-striped table-bordered" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th width="5%">No</th>
-                                        <th width="20%">Category Name</th>
-                                        <th width="55%">Category Description</th>
-                                        <th width="15%">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                            @if(count($Categorie) > 0)
-                                     @foreach($Categorie as $Categories)
-                                    <tr>
-                                        <td>{{$Categories->id}}</td>
-                                        <td>{{$Categories->name}}</td>
-                                        <td>
-                                          <p class="mb-0">{{$Categories->Describe}}</p>
-                                        </td>
-                                        <td>
-                                           <div class="flex align-items-center list-user-action">
-                                             <a  data-toggle="tooltip" data-placement="top" title="" name="edit-category" value="edit-category"  data-original-title="Edit" href="{{ route('edit-category', ['id'=>$Categories->id]) }}">Edit</a>
-                                             <a  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#">Delete</a>
-                                          </div>
-                                        </td>
-                                    </tr>
- @endforeach
-                   @endif
-                                </tbody>
-                            </table>
-                           </div>
+                             @include('include.massege')
+
+
+                         <form method="POST" action="{{ action('controlController@update',['id'=>$Categorie->id]) }}">
+                               @csrf
+ @method('PUT')
+                               <input type="hidden" name="requestName" value="edit-Categories"/>
+                              <div class="form-group">
+                                 <label>Category Name:</label>
+                                 <input type="text" name="name"class="form-control"">
+                              </div>
+                              <div class="form-group">
+                                 <label>Category Description:</label>
+                                 <textarea name="Describe"  class="form-control" rows="4" "></textarea>
+                              </div>
+
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                              <button type="reset" class="btn btn-danger">Reset</button>
+
+                           </form>
+
+
                         </div>
                      </div>
                   </div>
@@ -119,12 +121,27 @@
          </div>
       </div>
       <!-- Wrapper END -->
-
+      <!-- Footer -->
+      <footer class="iq-footer">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-6">
+                  <ul class="list-inline mb-0">
+                     <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                     <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-6 text-right">
+                  Copyright 2020 <a href="#">Booksto</a> All Rights Reserved.
+               </div>
+            </div>
+         </div>
+      </footer>
       <!-- Footer END -->
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-       <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
+      <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
       <script src="{{ asset('admin/js/popper.min.js') }}"></script>
       <script src="{{ asset('admin/js/bootstrap.min.js') }}"></script>
       <script src="{{ asset('admin/js/jquery.dataTables.min.js') }}"></script>
@@ -161,7 +178,7 @@
       <!-- am kelly JavaScript -->
       <script src="{{ asset('admin/js/kelly.js') }}"></script>
       <!-- am maps JavaScript -->
-      <script src="{{ asset('admin/js/maps.jsjs/maps.js') }}"></script>
+      <script src="{{ asset('admin/js/maps.js') }}"></script>
       <!-- am worldLow JavaScript -->
       <script src="{{ asset('admin/js/worldLow.js') }}"></script>
       <!-- Raphael-min JavaScript -->
@@ -178,5 +195,5 @@
       <script src="{{ asset('admin/js/chart-custom.js') }}"></script>
       <!-- Custom JavaScript -->
       <script src="{{ asset('admin/js/custom.js') }}"></script>
-    </body>
+   </body>
 </html>

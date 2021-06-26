@@ -19,7 +19,7 @@
 
       <link rel="stylesheet" href="{{ asset('admin/css/remixicon.css') }}">
 
-   
+
 
 
    </head>
