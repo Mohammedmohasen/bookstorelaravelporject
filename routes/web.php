@@ -20,7 +20,9 @@ use Illuminate\Support\Facades\Auth;
 //login route
 Route::get('/login', 'controlController@index')->name('login');
 Route::get('/signup', 'controlController@index')->name('signup');
-
+Route::get('/index', function () {
+    return view('admin.book');
+});
 //admin add route
 ///add author
 Route::get('/add-author',function () {
