@@ -83,7 +83,7 @@ return redirect()->back()->with('success', 'succes create Categorie : ' . $reque
      */
     public function update(Request $request, $id)
     {
-        //
+        return "tue value ";
     }
 
     /**

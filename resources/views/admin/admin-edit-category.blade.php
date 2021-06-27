@@ -94,19 +94,19 @@
                              @include('include.massege')
 
 
-                         <form method="POST" action="{{ action('controlController@update',['id'=>$Categorie->id]) }}">
+                         <form  action="{{ action('controlController@update',$Categorie->id)}}" method="POST">
                                @csrf
- @method('PUT')
+                               
                                <input type="hidden" name="requestName" value="edit-Categories"/>
                               <div class="form-group">
                                  <label>Category Name:</label>
-                                 <input type="text" name="name"class="form-control"">
+                                 <input type="text" name="name"class="form-control"  value="{{$Categorie->name}}">
                               </div>
                               <div class="form-group">
                                  <label>Category Description:</label>
-                                 <textarea name="Describe"  class="form-control" rows="4" "></textarea>
+                                 <textarea name="Describe"  class="form-control" rows="4" >{{$Categorie->Describe}}</textarea>
                               </div>
-
+                                    
                               <button type="submit" class="btn btn-primary">Submit</button>
                               <button type="reset" class="btn btn-danger">Reset</button>
 

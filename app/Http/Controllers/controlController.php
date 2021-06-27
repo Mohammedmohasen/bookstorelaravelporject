@@ -113,20 +113,18 @@ class controlController extends Controller
      */
     public function edit($id)
     {
-           $url = Route::currentRouteName();
-        switch ($url) {
-            case 'edit-category':
-              return app('App\Http\Controllers\admin\categoriesController')->edit($id);
-                break;
-            
-            default:
-                # code...
-                break;
-        }
-  
+        $url = url()->current();
+$http = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+if (strpos($url, 'category') !== false)
+{return app('App\Http\Controllers\admin\categoriesController')->edit($id);}
+else {
+    return $url;
+}
 
 
-        return $url;
+
+
+
 
     }
 
@@ -142,8 +140,9 @@ class controlController extends Controller
         $check = $request['requestName'];
          switch ($check) {
               case 'edit-Categories':
-                 return app('App\Http\Controllers\admin\categoriesController')->update($request,$id);
-             break; 
+                
+               return app('App\Http\Controllers\admin\categoriesController')->update($request,$id);
+             break;
              default:
                  break;
          }
