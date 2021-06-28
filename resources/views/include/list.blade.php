@@ -7,7 +7,7 @@
                            <li><a href="{{ route('category') }}">Category</a></li>
                            <li><a href="{{ route('author') }}">AUTHER</a></li>
                            <li><a href="{{ route('publishing') }}">publishing house</a></li>
-                         
+
 
                         </ul>
                      </li>
@@ -22,4 +22,3 @@
                         </ul>
                      </li>
                   </ul>
-               
