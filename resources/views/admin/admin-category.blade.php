@@ -69,6 +69,7 @@
          </div>
          <!-- Page Content  -->
          <div id="content-page" class="content-page">
+           @include('include.massege')
             <div class="container-fluid">
                <div class="row">
                   <div class="col-sm-12">
@@ -81,6 +82,7 @@
                         </div>
                         <div class="iq-card-body">
                            <div class="table-responsive">
+                         
                               <table class="data-tables table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>

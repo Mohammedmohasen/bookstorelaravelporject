@@ -91,23 +91,25 @@
                            </div>
                         </div>
                         <div class="iq-card-body">
-                             @include('include.massege')
+                           
+
+ @include('include.massege')
+                         <form method="POST" action="{{ action('controlController@update',$Categorie->id)}}" >
+
+                            @csrf
 
 
-                         <form  action="{{ action('controlController@update',$Categorie->id)}}" method="POST">
-                               @csrf
-                               
                                <input type="hidden" name="requestName" value="edit-Categories"/>
                               <div class="form-group">
                                  <label>Category Name:</label>
-                                 <input type="text" name="name"class="form-control"  value="{{$Categorie->name}}">
+                                 <input type="text" name="name"class="form-control"  value="{{$Categorie->name}}" readonly>
                               </div>
                               <div class="form-group">
                                  <label>Category Description:</label>
                                  <textarea name="Describe"  class="form-control" rows="4" >{{$Categorie->Describe}}</textarea>
                               </div>
-                                    
-                              <button type="submit" class="btn btn-primary">Submit</button>
+                               @method('PUT')
+                              <button type="submit"   class="btn btn-primary">Submit</button>
                               <button type="reset" class="btn btn-danger">Reset</button>
 
                            </form>

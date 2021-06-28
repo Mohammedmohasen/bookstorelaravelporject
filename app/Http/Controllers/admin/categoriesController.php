@@ -83,7 +83,14 @@ return redirect()->back()->with('success', 'succes create Categorie : ' . $reque
      */
     public function update(Request $request, $id)
     {
-        return "tue value ";
+        $Categorie = Categorie::find($id);
+       $Categorie->name = $request->input('name');
+$Categorie->Describe = $request->input('Describe');
+$Categorie->NumberOfBook = 0;
+$Categorie->save();
+
+        return  redirect('/category')->with('success', 'succes create Categorie : ' . $request->input('name'));
+
     }
 
     /**
