@@ -5,11 +5,15 @@ namespace App\Http\Controllers\login;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\admin\PublishingHouse;
+use App\Models\admin\books;
+use App\Models\admin\Categorie;
+use App\Models\admin\author;
 
 class logincontroller extends Controller
 {
     function index() {
-        return view('admin.admin-add-author');
+
     }
     public function __construct()
     {
@@ -32,11 +36,17 @@ class logincontroller extends Controller
         ]);
         $remember =$request->has('check');
         if (Auth::attempt($user,$remember)) {
-         
-
-
             $request->session()->regenerate();
-            return redirect('add-author')->with('success','login ');
+            $author=author::count();
+            $Categorie=Categorie::count();
+             $PublishingHouse=PublishingHouse::count();
+              $books=books::count();
+            return view('admin.admin-dashboard')
+            ->with('success','login ')
+            ->with('author',$author)
+            ->with('Categorie',$Categorie)
+            ->with('PublishingHouse',$PublishingHouse)
+            ->with('books',$books) ;
         }
 
         return back()->withErrors([
@@ -44,6 +54,5 @@ class logincontroller extends Controller
             'password' => 'wrong password',
         ]);
 
-    return redirect('add-author');
     }
 }

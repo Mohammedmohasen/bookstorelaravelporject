@@ -42,7 +42,9 @@
          </div>
         
          <!-- Page Content  -->
+
          <div id="content-page" class="content-page">
+            @include('include.massege')
             <div class="container-fluid">
                <div class="row">
                   <div class="col-md-6 col-lg-3">
@@ -51,7 +53,7 @@
                            <div class="d-flex align-items-center">
                              
                               <div class="text-left ml-3">
-                                 <h2 class="mb-0"><span class="counter">5000</span></h2>
+                                 <h2 class="mb-0"><span class="counter">{{$author}}</span></h2>
                                  <h5 class="">AUTHOR</h5>
                               </div>
                            </div>
@@ -64,7 +66,7 @@
                            <div class="d-flex align-items-center">
                               
                               <div class="text-left ml-3">
-                                 <h2 class="mb-0"><span class="counter">4.8</span></h2>
+                                 <h2 class="mb-0"><span class="counter">{{$books}}</span></h2>
                                  <h5 class="">BOOKS</h5>
                               </div>
                            </div>
@@ -77,7 +79,7 @@
                            <div class="d-flex align-items-center">
                            
                               <div class="text-left ml-3">
-                                 <h2 class="mb-0"><span class="counter">1.2</span></h2>
+                                 <h2 class="mb-0"><span class="counter">{{$Categorie}}</span></h2>
                                  <h5 class="">Category</h5>
                               </div>
                            </div>
@@ -90,7 +92,7 @@
                            <div class="d-flex align-items-center">
                              
                               <div class="text-left ml-3">
-                                 <h2 class="mb-0"><span class="counter">690</span></h2>
+                                 <h2 class="mb-0"><span class="counter">{{$PublishingHouse}}</span></h2>
                                  <h5 class="">publishing house</h5>
                               </div>
                            </div>
