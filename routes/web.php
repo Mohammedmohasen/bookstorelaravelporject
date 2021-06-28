@@ -50,8 +50,8 @@ Route::PUT('/{id}','controlController@update')->name('updatecategory');
 Route::get('/author/edit/{id}/','controlController@edit')->name('editCategory');
 Route::PUT('/{id}','controlController@update')->name('updatecategory');
 //edit publishing home
-Route::get('/author/edit/{id}/','controlController@edit')->name('editCategory');
-Route::PUT('/{id}','controlController@update')->name('updatecategory');
+Route::get('/PublishingHouse/edit/{id}/','controlController@edit')->name('editPublishingHouse');
+Route::PUT('/{id}','controlController@update')->name('updatePublishingHouse');
 /////////////////////////////////////////// resource controller
 Route::resource('/','controlController');
 

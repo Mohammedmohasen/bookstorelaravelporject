@@ -119,7 +119,10 @@ if (strpos($url, 'category') !== false)
 {return app('App\Http\Controllers\admin\categoriesController')->edit($id);}
 elseif(strpos($url, 'author') !== false) {
     return app('App\Http\Controllers\admin\authorController')->edit($id);
-    return $url;
+}elseif(strpos($url, 'PublishingHouse') !== false)
+{
+    return app('App\Http\Controllers\admin\publishingController')->edit($id);
+}
 }
 
 
@@ -127,7 +130,7 @@ elseif(strpos($url, 'author') !== false) {
 
 
 
-    }
+
 
     /**
      * Update the specified resource in storage.
@@ -136,21 +139,23 @@ elseif(strpos($url, 'author') !== false) {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function update(Request $request, $id)
     {
         $check = $request['requestName'];
-         switch ($check) {
+        switch ($check) {
               case 'edit-Categories':
-               return app('App\Http\Controllers\admin\categoriesController')->update($request,$id);
-             break;
-             case 'edit-author-form':
-                return  app('App\Http\Controllers\admin\authorController')->update($request,$id);
-                break;
-             default:
-                 break;
-         }
-    }
+               return app('App\Http\Controllers\admin\categoriesController')->update($request, $id);
+        break;
+        case 'edit-author-form':
+                return  app('App\Http\Controllers\admin\authorController')->update($request, $id);
+        break;
+        case 'edit-publishing-house':
+               return  app('App\Http\Controllers\admin\publishingController')->update($request, $id);
+        break;
 
+    }
+    }
     /**
      * Remove the specified resource from storage.
      *

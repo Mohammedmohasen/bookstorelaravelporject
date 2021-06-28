@@ -71,7 +71,8 @@ return redirect()->back()->with('success', 'succes create Publishing HOME : ' . 
      */
     public function edit($id)
     {
-        //
+         $PublishingHouse = PublishingHouse::find($id);
+return view('admin.admin-edit-publishing-home')->with('PublishingHouse', $PublishingHouse);
     }
 
     /**
@@ -83,7 +84,13 @@ return redirect()->back()->with('success', 'succes create Publishing HOME : ' . 
      */
     public function update(Request $request, $id)
     {
-        //
+  $PublishingHouse = PublishingHouse::find($id);
+$PublishingHouse->siteName = $request->input('siteName');
+$PublishingHouse->save();
+
+        return  redirect('/publishing')->with('success', 'succes update PublishingHouse : ' . $PublishingHouse->publishingHouseName);
+
+
     }
 
     /**
