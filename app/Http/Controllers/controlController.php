@@ -117,7 +117,8 @@ class controlController extends Controller
 $http = 'http://' . $_SERVER['HTTP_HOST'] . '/';
 if (strpos($url, 'category') !== false)
 {return app('App\Http\Controllers\admin\categoriesController')->edit($id);}
-else {
+elseif(strpos($url, 'author') !== false) {
+    return app('App\Http\Controllers\admin\authorController')->edit($id);
     return $url;
 }
 
@@ -140,9 +141,11 @@ else {
         $check = $request['requestName'];
          switch ($check) {
               case 'edit-Categories':
-                
                return app('App\Http\Controllers\admin\categoriesController')->update($request,$id);
              break;
+             case 'edit-author-form':
+                return  app('App\Http\Controllers\admin\authorController')->update($request,$id);
+                break;
              default:
                  break;
          }

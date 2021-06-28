@@ -73,7 +73,8 @@ class authorController extends Controller
      */
     public function edit($id)
     {
-        //
+        $author=author::find($id);
+        return view('admin.admin-edit-author')->with('author',$author);
     }
 
     /**
@@ -85,7 +86,11 @@ class authorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+          $author = author::find($id);
+$author->email = $request->input('Email');
+$author->save();
+
+        return  redirect('/author')->with('success', 'succes create Categorie : ' . $author->name);
     }
 
     /**

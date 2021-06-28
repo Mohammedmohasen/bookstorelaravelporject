@@ -46,6 +46,12 @@ Route::get('/add-BOOKS','controlController@GetParentInformation')->name('add-BOO
 // 'App\Http\Controllers\admin\categoriesController@edit'
 Route::get('/category/edit/{id}/','controlController@edit')->name('editCategory');
 Route::PUT('/{id}','controlController@update')->name('updatecategory');
+/////////// edit author 
+Route::get('/author/edit/{id}/','controlController@edit')->name('editCategory');
+Route::PUT('/{id}','controlController@update')->name('updatecategory');
+//edit publishing home
+Route::get('/author/edit/{id}/','controlController@edit')->name('editCategory');
+Route::PUT('/{id}','controlController@update')->name('updatecategory');
 /////////////////////////////////////////// resource controller
 Route::resource('/','controlController');
 
