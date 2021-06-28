@@ -56,6 +56,9 @@ Route::PUT('/{id}','controlController@update')->name('updatePublishingHouse');
 Route::get('/category/delete/{id}/', 'controlController@destroy')->name('deleteCategory');
 //delete author
 Route::get('/author/delete/{id}/','controlController@destroy')->name('deleteauthor');
+//delete publishing home
+Route::get('/PublishingHouse/delete/{id}/', 'controlController@destroy')->name('destroyPublishingHouse');
+
 /////////////////////////////////////////// resource controller
 Route::resource('/','controlController');
 

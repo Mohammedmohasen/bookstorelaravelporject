@@ -104,7 +104,7 @@
                                         <td>
                                            <div class="flex align-items-center list-user-action">
 <a  data-toggle="tooltip" data-placement="top" title="" name="edit-category" value="edit-category"  data-original-title="Edit" href="{{ url('/PublishingHouse/edit/'.$PublishingHousess->id) }}">Edit</a>
-                                             <a  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#">Delete</a>
+                                       <a  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="{{ url('/PublishingHouse/delete/'.$PublishingHousess->id) }}">Delete</a>
                                           </div>
                                         </td>
                                     </tr>

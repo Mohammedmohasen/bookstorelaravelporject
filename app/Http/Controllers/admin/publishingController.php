@@ -101,7 +101,12 @@ $PublishingHouse->save();
      */
     public function destroy($id)
     {
-        //
+        $PublishingHouse = PublishingHouse::find($id);
+$name = $PublishingHouse->publishingHouseName;
+$PublishingHouse->delete();
+return redirect('/publishing')->with('success', 'succes delete publishing : ' . $name);
+
+
     }
        public function showall()
     {

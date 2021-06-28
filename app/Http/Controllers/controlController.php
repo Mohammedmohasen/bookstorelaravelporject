@@ -171,8 +171,10 @@ elseif(strpos($url, 'author') !== false) {
       }elseif(strpos($url, 'author') !== false)
       {
           return app('App\Http\Controllers\admin\authorController')->destroy($id);
-
-      }
+      }elseif(strpos($url, 'PublishingHouse') !== false)
+{
+    return app('App\Http\Controllers\admin\publishingController')->destroy($id);
+}
     }
 ///CUSTOM METHOID USE FOR SPACIFEC THINKS
 public function GetParentInformation()
