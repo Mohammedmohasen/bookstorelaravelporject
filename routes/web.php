@@ -15,7 +15,10 @@ use App\Http\Controller\controlController;
 |
 */
 //get route we are put it here for more regular code and the right thing in the laravel put the  gt code before the resource route
-
+//test side
+Route::get('test', function () {
+   return view('admin.admin-dashboard');
+});
 //login route
 
 Route::get('/login', 'controlController@index')->name('login');
