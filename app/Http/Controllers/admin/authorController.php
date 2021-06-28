@@ -42,7 +42,7 @@ class authorController extends Controller
             'Email' => ['required', 'min:8', 'email']
 
         ]);
-      
+
         $author = new author();
         $author->name= $request->input('Name');
         $author->email = $request->input('Email');
@@ -101,7 +101,11 @@ $author->save();
      */
     public function destroy($id)
     {
-        //
+       $author = author::find($id);
+$name = $author->name;
+$author->delete();
+return redirect('/category')->with('success', 'succes delete author : ' . $name);
+
     }
       public function showall()
     {

@@ -168,6 +168,10 @@ elseif(strpos($url, 'author') !== false) {
       if (strpos($url, 'category') !== false)
       {
           return app('App\Http\Controllers\admin\categoriesController')->destroy($id);
+      }elseif(strpos($url, 'author') !== false)
+      {
+          return app('App\Http\Controllers\admin\authorController')->destroy($id);
+
       }
     }
 ///CUSTOM METHOID USE FOR SPACIFEC THINKS

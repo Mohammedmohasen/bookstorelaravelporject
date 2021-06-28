@@ -104,7 +104,7 @@ $Categorie->save();
       $Categorie = Categorie::find($id);
       $name=$Categorie->name;
        $Categorie ->delete();
-        return  redirect('/category')->with('success', 'succes create Categorie : ' . $name);
+        return  redirect('/category')->with('success', 'succes delete Categorie : ' . $name);
     }
     public function showall()
     {

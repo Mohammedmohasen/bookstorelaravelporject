@@ -46,14 +46,16 @@ Route::get('/add-BOOKS','controlController@GetParentInformation')->name('add-BOO
 // 'edit category
 Route::get('/category/edit/{id}/','controlController@edit')->name('editCategory');
 Route::PUT('/{id}','controlController@update')->name('updatecategory');
-/////////// edit author
-Route::get('/author/edit/{id}/','controlController@edit')->name('editCategory');
-Route::PUT('/{id}','controlController@update')->name('updatecategory');
+//edit author
+Route::get('/author/edit/{id}/','controlController@edit')->name('editauthor');
+Route::PUT('/{id}','controlController@update')->name('updateauthor');
 //edit publishing home
 Route::get('/PublishingHouse/edit/{id}/','controlController@edit')->name('editPublishingHouse');
 Route::PUT('/{id}','controlController@update')->name('updatePublishingHouse');
 //dekete category
 Route::get('/category/delete/{id}/', 'controlController@destroy')->name('deleteCategory');
+//delete author
+Route::get('/author/delete/{id}/','controlController@destroy')->name('deleteauthor');
 /////////////////////////////////////////// resource controller
 Route::resource('/','controlController');
 
