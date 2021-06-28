@@ -43,15 +43,17 @@ Route::get('/add-publishing-house',function () {
 ////////add book
 Route::get('/add-BOOKS','controlController@GetParentInformation')->name('add-BOOKS');
 /////////edit book
-// 'App\Http\Controllers\admin\categoriesController@edit'
+// 'edit category
 Route::get('/category/edit/{id}/','controlController@edit')->name('editCategory');
 Route::PUT('/{id}','controlController@update')->name('updatecategory');
-/////////// edit author 
+/////////// edit author
 Route::get('/author/edit/{id}/','controlController@edit')->name('editCategory');
 Route::PUT('/{id}','controlController@update')->name('updatecategory');
 //edit publishing home
 Route::get('/PublishingHouse/edit/{id}/','controlController@edit')->name('editPublishingHouse');
 Route::PUT('/{id}','controlController@update')->name('updatePublishingHouse');
+//dekete category
+Route::get('/category/delete/{id}/', 'controlController@destroy')->name('deleteCategory');
 /////////////////////////////////////////// resource controller
 Route::resource('/','controlController');
 

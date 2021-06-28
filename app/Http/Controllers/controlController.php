@@ -164,7 +164,11 @@ elseif(strpos($url, 'author') !== false) {
      */
     public function destroy($id)
     {
-        //
+        $url = url()->current();
+      if (strpos($url, 'category') !== false)
+      {
+          return app('App\Http\Controllers\admin\categoriesController')->destroy($id);
+      }
     }
 ///CUSTOM METHOID USE FOR SPACIFEC THINKS
 public function GetParentInformation()

@@ -82,7 +82,7 @@
                         </div>
                         <div class="iq-card-body">
                            <div class="table-responsive">
-                         
+
                               <table class="data-tables table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
@@ -104,7 +104,7 @@
                                         <td>
                                            <div class="flex align-items-center list-user-action">
 <a  data-toggle="tooltip" data-placement="top" title="" name="edit-category" value="edit-category"  data-original-title="Edit" href="{{ url('/category/edit/'.$Categories->id) }}">Edit</a>
-                                             <a  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#">Delete</a>
+<a  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="{{ url('/category/delete/'.$Categories->id) }}">Delete</a>
                                           </div>
                                         </td>
                                     </tr>

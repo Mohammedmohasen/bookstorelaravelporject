@@ -71,7 +71,7 @@ return redirect()->back()->with('success', 'succes create Categorie : ' . $reque
     {
         $Categorie=Categorie::find($id);
         return view('admin.admin-edit-category')->with('Categorie',$Categorie);
-    
+
     }
 
     /**
@@ -101,7 +101,10 @@ $Categorie->save();
      */
     public function destroy($id)
     {
-        //
+      $Categorie = Categorie::find($id);
+      $name=$Categorie->name;
+       $Categorie ->delete();
+        return  redirect('/category')->with('success', 'succes create Categorie : ' . $name);
     }
     public function showall()
     {
