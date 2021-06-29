@@ -110,8 +110,19 @@ $Categorie->save();
     {
       $Categorie = Categorie::find($id);
       $name=$Categorie->name;
-       $Categorie ->delete();
-        return  redirect('/category')->with('success', 'succes delete Categorie : ' . $name);
+       $condtion=$Categorie->NumberOfBook==0;
+
+        if($condtion){
+                $Categorie->delete();
+
+return redirect('/category')->with('success', 'succes delete author : ' . $name);
+            }
+return abort(
+    response()->json(['error' => 'you cannot delete a pearant item !.',
+                                  'type'=>'this author whoos have the name :'.$name.'and he have a '.$Categorie->NumberOfBook.'',
+                                  'error type '=>'databbase conjunctoin withthe relationship '
+], 402)
+);
     }
     public function showall()
     {

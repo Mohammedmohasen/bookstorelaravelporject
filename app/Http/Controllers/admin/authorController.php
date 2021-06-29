@@ -106,9 +106,18 @@ $author->save();
     public function destroy($id)
     {
        $author = author::find($id);
-$name = $author->name;
-$author->delete();
-return redirect('/category')->with('success', 'succes delete author : ' . $name);
+       $name = $author->name;
+       $condtion=$author->BookBNumber==0;
+       if($condtion){
+                $author->delete();
+return redirect('/author')->with('success', 'succes delete author : ' . $name);
+            }
+return abort(
+    response()->json(['error' => 'you cannot delete a pearant item !.',
+                                  'type'=>'this author whoos have the name :'.$name.'and he have a '.$author->BookBNumber.'',
+                                  'error type '=>'databbase conjunctoin withthe relationship '
+], 402)
+);
 
     }
       public function showall()

@@ -107,8 +107,18 @@ $PublishingHouse->save();
     {
         $PublishingHouse = PublishingHouse::find($id);
 $name = $PublishingHouse->publishingHouseName;
-$PublishingHouse->delete();
-return redirect('/publishing')->with('success', 'succes delete publishing : ' . $name);
+$condtion=$PublishingHouse->bookNumber==0;
+
+if ($condtion) {
+    $PublishingHouse->delete();
+   return redirect('/publishing')->with('success', 'succes delete publishing : ' . $name);
+}
+return abort(
+    response()->json(['error' => 'you cannot delete a pearant item !.',
+        'type' => 'this author whoos have the name :' . $name . 'and he have a ' . $PublishingHouse->bookNumber . '',
+        'error type ' => 'databbase conjunctoin withthe relationship ',
+    ], 402)
+);
 
 
     }
