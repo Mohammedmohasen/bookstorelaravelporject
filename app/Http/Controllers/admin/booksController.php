@@ -57,7 +57,6 @@ $books->categoriesId = $request->input('bookCategory');
 $books->publishingHousesId = $request->input('bookpublishinghome');
 $books->save();
 return redirect()->back()->with('success', 'succes create book : ' .  $request->input('NAME'));
-
     }
 
     /**
