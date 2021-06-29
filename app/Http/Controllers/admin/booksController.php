@@ -52,9 +52,24 @@ $books = new books();
 $books->name = $request->input('NAME');
 $books->isbn = $request->input('ISBN');
 $books->releaseYear =  $dt->today();
+
 $books->authorId = $request->input('bookAuthor');
+
+$author=author::find( $request->input('bookAuthor'));
+
+$author->BookBNumber=($author->BookBNumber)+1;
+$author->save();
+
 $books->categoriesId = $request->input('bookCategory');
+
+$Categorie=Categorie::find($request->input('bookCategory'));
+$Categorie->NumberOfBook=($Categorie->NumberOfBook)+1;
+$Categorie->save();
+
 $books->publishingHousesId = $request->input('bookpublishinghome');
+$PublishingHouse=PublishingHouse::find($request->input('bookpublishinghome'));
+$PublishingHouse->bookNumber=($PublishingHouse->bookNumber)+1;
+$PublishingHouse->save();
 $books->save();
 return redirect()->back()->with('success', 'succes create book : ' .  $request->input('NAME'));
     }
