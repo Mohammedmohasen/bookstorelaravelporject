@@ -39,7 +39,7 @@ class authorController extends Controller
         $this->validate($request, [
             'Name' => ['required', 'min:5','max:20'],
             'Age' => ['required','numeric','min:18'],
-            'Email' => ['required', 'min:8', 'email']
+              'Email' => ['required', 'min:8', 'email','unique:authors']
 
         ]);
 
@@ -87,8 +87,7 @@ class authorController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-    'Email' => ['required', 'min:8', 'email'],
-
+    'Email' => ['required', 'min:8', 'email','|exists:author'],
 ]);
 
           $author = author::find($id);
