@@ -94,7 +94,7 @@ class authorController extends Controller
 $author->email = $request->input('Email');
 $author->save();
 
-        return  redirect('/author')->with('success', 'succes create Categorie : ' . $author->name);
+        return  redirect('/author')->with('success', 'succes update author : ' . $author->name);
     }
 
     /**

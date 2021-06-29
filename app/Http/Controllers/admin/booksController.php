@@ -128,6 +128,17 @@ return view('admin.admin-edit-book')->with('books', $books);
     public function destroy($id)
     {
          $books = books::find($id);
+       $author=author::find($books->authorId);
+$Categorie = Categorie::find($books->categoriesId);
+$PublishingHouse = PublishingHouse::find($books->publishingHousesId );
+
+$author->BookBNumber = ($author->BookBNumber) -1;
+$author->save();
+$Categorie->NumberOfBook = ($Categorie->NumberOfBook) - 1;
+$Categorie->save();
+$PublishingHouse->bookNumber = ($PublishingHouse->bookNumber) - 1;
+$PublishingHouse->save();
+
       $name=$books->name;
        $books ->delete();
         return  redirect('/book')->with('success', 'succes delete books : ' . $name);
