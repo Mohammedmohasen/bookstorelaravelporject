@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\login\signupcontroller;
-use Illuminate\Http\Request;
 use App\Models\admin\author;
+use App\Models\admin\books;
 use App\Models\admin\Categorie;
 use App\Models\admin\PublishingHouse;
-use App\Models\admin\books;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
 class controlController extends Controller
 {
     /**
@@ -33,15 +34,15 @@ class controlController extends Controller
                 return view('customer.home-page.index');
                 break;
             case $http . 'book':
-              return app('App\Http\Controllers\admin\booksController')->showall();
-              case $http.'category' :
+                return app('App\Http\Controllers\admin\booksController')->showall();
+            case $http . 'category':
                 return app('App\Http\Controllers\admin\categoriesController')->showall();
                 break;
-                case $http .'author':
-                    return app('App\Http\Controllers\admin\authorController')->showall();
-                    break;
-                    case $http.'publishing':
-                         return app('App\Http\Controllers\admin\publishingController')->showall();
+            case $http . 'author':
+                return app('App\Http\Controllers\admin\authorController')->showall();
+                break;
+            case $http . 'publishing':
+                return app('App\Http\Controllers\admin\publishingController')->showall();
             default:
                 return view('login.pages-login');
                 break;
@@ -85,9 +86,11 @@ class controlController extends Controller
                 return app('App\Http\Controllers\admin\publishingController')->store($request);
                 break;
             case 'add-book':
-                return  app('App\Http\Controllers\admin\booksController')->store($request);
+                return app('App\Http\Controllers\admin\booksController')->store($request);
+                break;
+            case 'searchbox':
 
-                default:
+            default:
 
                 break;
         }
@@ -114,26 +117,15 @@ class controlController extends Controller
     public function edit($id)
     {
         $url = url()->current();
-$http = 'http://' . $_SERVER['HTTP_HOST'] . '/';
-if (strpos($url, 'category') !== false)
-{return app('App\Http\Controllers\admin\categoriesController')->edit($id);}
-elseif(strpos($url, 'author') !== false) {
-    return app('App\Http\Controllers\admin\authorController')->edit($id);
-}elseif(strpos($url, 'PublishingHouse') !== false)
-{
-    return app('App\Http\Controllers\admin\publishingController')->edit($id);
-}elseif(strpos($url, 'book') !== false)
-{
-    return app('App\Http\Controllers\admin\booksController')->edit($id);
-}
-}
-
-
-
-
-
-
-
+        $http = 'http://' . $_SERVER['HTTP_HOST'] . '/';
+        if (strpos($url, 'category') !== false) {return app('App\Http\Controllers\admin\categoriesController')->edit($id);} elseif (strpos($url, 'author') !== false) {
+            return app('App\Http\Controllers\admin\authorController')->edit($id);
+        } elseif (strpos($url, 'PublishingHouse') !== false) {
+            return app('App\Http\Controllers\admin\publishingController')->edit($id);
+        } elseif (strpos($url, 'book') !== false) {
+            return app('App\Http\Controllers\admin\booksController')->edit($id);
+        }
+    }
 
     /**
      * Update the specified resource in storage.
@@ -147,19 +139,19 @@ elseif(strpos($url, 'author') !== false) {
     {
         $check = $request['requestName'];
         switch ($check) {
-              case 'edit-Categories':
-               return app('App\Http\Controllers\admin\categoriesController')->update($request, $id);
-        break;
-        case 'edit-author-form':
-                return  app('App\Http\Controllers\admin\authorController')->update($request, $id);
-        break;
-        case 'edit-publishing-house':
-               return  app('App\Http\Controllers\admin\publishingController')->update($request, $id);
-        break;
-case 'edit-book':
-               return  app('App\Http\Controllers\admin\booksController')->update($request, $id);
-        break;
-    }
+            case 'edit-Categories':
+                return app('App\Http\Controllers\admin\categoriesController')->update($request, $id);
+                break;
+            case 'edit-author-form':
+                return app('App\Http\Controllers\admin\authorController')->update($request, $id);
+                break;
+            case 'edit-publishing-house':
+                return app('App\Http\Controllers\admin\publishingController')->update($request, $id);
+                break;
+            case 'edit-book':
+                return app('App\Http\Controllers\admin\booksController')->update($request, $id);
+                break;
+        }
     }
     /**
      * Remove the specified resource from storage.
@@ -170,50 +162,55 @@ case 'edit-book':
     public function destroy($id)
     {
         $url = url()->current();
-      if (strpos($url, 'category') !== false)
-      {
-          return app('App\Http\Controllers\admin\categoriesController')->destroy($id);
-      }elseif(strpos($url, 'author') !== false)
-      {
-          return app('App\Http\Controllers\admin\authorController')->destroy($id);
-      }elseif(strpos($url, 'PublishingHouse') !== false)
-{
-    return app('App\Http\Controllers\admin\publishingController')->destroy($id);
-}elseif(strpos($url, 'book') !== false)
-{
-    return app('App\Http\Controllers\admin\booksController')->destroy($id);
-}
+        if (strpos($url, 'category') !== false) {
+            return app('App\Http\Controllers\admin\categoriesController')->destroy($id);
+        } elseif (strpos($url, 'author') !== false) {
+            return app('App\Http\Controllers\admin\authorController')->destroy($id);
+        } elseif (strpos($url, 'PublishingHouse') !== false) {
+            return app('App\Http\Controllers\admin\publishingController')->destroy($id);
+        } elseif (strpos($url, 'book') !== false) {
+            return app('App\Http\Controllers\admin\booksController')->destroy($id);
+        }
     }
 ///CUSTOM METHOID USE FOR SPACIFEC THINKS
-public function GetParentInformation()
-{
-    $author=new author();
-    $Categorie=new Categorie();
-    $PublishingHouse=new PublishingHouse();
+    public function GetParentInformation()
+    {
+        $author = new author();
+        $Categorie = new Categorie();
+        $PublishingHouse = new PublishingHouse();
 
-$author=author::all('id', 'name');
-$Categorie=Categorie::all('id', 'name');
-$PublishingHouse=PublishingHouse::all('id', 'publishingHouseName');
-   return  view('admin.admin-add-book')
-   ->with('author',$author)
-   ->with('Categorie',$Categorie)
-   ->with('PublishingHouse',$PublishingHouse);
-}
-public function searchmethod($request)
-{
-     $this->validate($request, [
-    'search' => ['required', 'min:5'],
-     ]);
-     $author=new author();
-    $Categorie=new Categorie();
-    $PublishingHouse=new PublishingHouse();
+        $author = author::all('id', 'name');
+        $Categorie = Categorie::all('id', 'name');
+        $PublishingHouse = PublishingHouse::all('id', 'publishingHouseName');
+        return view('admin.admin-add-book')
+            ->with('author', $author)
+            ->with('Categorie', $Categorie)
+            ->with('PublishingHouse', $PublishingHouse);
+    }
 
-$author=author::all('id')->where('name',$request->name);
-$Categorie=Categorie::all('id')->where('name',$request->name);;
-$PublishingHouse=PublishingHouse::all('id')->where('publishingHouseName',$request->name);;
-   return  view('admin.admin-add-book')
-   ->with('author',$author)
-   ->with('Categorie',$Categorie)
-   ->with('PublishingHouse',$PublishingHouse);
-}
+    public function searchmethod($request)
+    {
+        $this->validate($request, [
+            'search' => ['required', 'min:5'],
+        ]);
+        $author = new author();
+        $Categorie = new Categorie();
+        $PublishingHouse = new PublishingHouse();
+        $books = new books();
+        $Categorie = Categorie::all('id')->where('name', $request->search);
+        $author = author::all('id')->where('name', $request->search);
+        $PublishingHouse = PublishingHouse::all('id')->where('publishingHouseName', $request->search);
+        $books = books::all()
+            ->where('categoriesId', $Categorie)
+            ->where('publishingHousesId', $PublishingHouse)
+            ->where('authorId', $author)
+            ->with('author')
+            ->with('Categorie')
+            ->with('PublishingHouse')
+            ->select('*')
+            ->get();
+        //dd( $books);
+        return view('admin.admin-book')->with('books', $books);
+
+    }
 }
