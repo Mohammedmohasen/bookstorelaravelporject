@@ -93,7 +93,12 @@ return view('admin.admin-edit-author')->with('books', $books);
      */
     public function update(Request $request, $id)
     {
-        //
+        $books = books::find($id);
+        $bookname=$books->name;
+     $books->name=$request->input('NAME');
+     $books->save();
+     return redirect('/book')->with('success', 'succes update book : ' . $bookname);
+
     }
 
     /**

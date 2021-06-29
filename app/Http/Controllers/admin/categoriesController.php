@@ -84,12 +84,13 @@ return redirect()->back()->with('success', 'succes create Categorie : ' . $reque
     public function update(Request $request, $id)
     {
         $Categorie = Categorie::find($id);
+        $categorynam=$Categorie->name;
        $Categorie->name = $request->input('name');
 $Categorie->Describe = $request->input('Describe');
 $Categorie->NumberOfBook = 0;
 $Categorie->save();
 
-        return  redirect('/category')->with('success', 'succes create Categorie : ' . $request->input('name'));
+        return  redirect('/category')->with('success', 'succes update Categorie : ' .$categorynam);
 
     }
 
