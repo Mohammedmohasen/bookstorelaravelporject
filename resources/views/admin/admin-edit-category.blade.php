@@ -68,9 +68,10 @@
                            </div>
                         </div>
                         <div class="iq-card-body">
-                           
+
 
  @include('include.massege')
+ 
                          <form method="POST" action="{{ action('controlController@update',$Categorie->id)}}" >
 
                             @csrf

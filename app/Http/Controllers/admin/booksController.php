@@ -79,8 +79,8 @@ return redirect()->back()->with('success', 'succes create book : ' .  $request->
      */
     public function edit($id)
     {
-    $books = books::find($id);
-return view('admin.admin-edit-author')->with('books', $books);
+    $books = books::find($id)->with('author')->with('Categorie')->with('PublishingHouse')->select('*')->get();
+return view('admin.admin-edit-book')->with('books', $books);
 
     }
 
@@ -109,13 +109,16 @@ return view('admin.admin-edit-author')->with('books', $books);
      */
     public function destroy($id)
     {
-        //
+         $books = books::find($id);
+      $name=$books->name;
+       $books ->delete();
+        return  redirect('/book')->with('success', 'succes delete books : ' . $name);
     }
  public function showall()
     {
       $books=new books();
       $books=books::with('author')->with('Categorie')->with('PublishingHouse')->select('*')->get();
       //dd( $books);
-      return view('admin.book')->with('books',$books);
+      return view('admin.admin-book')->with('books',$books);
     }
 }

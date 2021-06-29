@@ -179,7 +179,7 @@ case 'edit-book':
       }elseif(strpos($url, 'PublishingHouse') !== false)
 {
     return app('App\Http\Controllers\admin\publishingController')->destroy($id);
-}elseif(strpos($url, 'PublishingHouse') !== false)
+}elseif(strpos($url, 'book') !== false)
 {
     return app('App\Http\Controllers\admin\booksController')->destroy($id);
 }

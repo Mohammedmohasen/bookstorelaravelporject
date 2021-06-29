@@ -59,56 +59,46 @@
                         </div>
                         <div class="iq-card-body">
                                 @include('include.massege')
-                           <form method="POST" action="{{ action('controlController@store') }}">
+                                @if(count($books) > 0)
+                             @foreach($books as $book)
+                           <form method="POST" action="{{ action('controlController@update',$book->id) }}">
                                <input type="hidden" name="requestName" value="edit-book"/>
                                @csrf
                               <div class="form-group">
                                  <label>Book Name:</label>
-                                 <input type="TEXT" name="NAME" class="form-control" value="{{$books->name}}">
+                                 <input type="TEXT" name="NAME" class="form-control" value="{{$book->name}}">
                               </div>
                                <div class="form-group">
                                  <label>Book ISBN:</label>
-                                 <input type="text" name="ISBN" class="form-control" readonly>
+                                 <input type="text" name="ISBN" class="form-control"  value="{{$book->isbn}}"readonly>
                               </div>
                               <div class="form-group">
                                  <label>Book Category:</label>
                                  <select class="form-control" id="exampleFormControlSelect1" name="bookCategory" readonnly>
                                     <option selected="" disabled="">Book Category</option>
-                                                    @if(count($Categorie) > 0)
-                                                           @foreach($Categorie as $Categories)
-                                                                   <option value="{{$Categories->id}}">{{$Categories->name}}</option>
-                                                          @endforeach
-                                                   @endif
+                                        <option >{{$book->Categorie->name}}</option>
                                  </select>
                               </div>
                               <div class="form-group">
                                  <label>Book Author:</label>
                                  <select class="form-control" id="exampleFormControlSelect2" name="bookAuthor" readonly>
                                     <option selected="" disabled="">Book Author</option>
-                                                @if(count($author) > 0)
-                                                     @foreach($author as $authors)
-                                     <option value="{{$authors->id}}">{{$authors->name}}</option>
-                                                     @endforeach
-                                                 @endif
+                                     <option>{{$book->author->name}}</option>
                                     </option>
                                  </select>
                               </div>
                                 <div class="form-group">
                                  <label>Book publishing home:</label>
                                  <select class="form-control" id="exampleFormControlSelect2" name="bookpublishinghome" readonly>
-                                    <option selected="" disabled="">publishing home</option>
-
-                                       @if(count($PublishingHouse) > 0)
-                                                 @foreach($PublishingHouse as $PublishingHouses)
-                                                         <option value="{{$PublishingHouses->id}}">{{$PublishingHouses->publishingHouseName}}</option>
-                                                 @endforeach
-                                       @endif
+                                    <option selected="" disabled="" >publishing home</option>
+                                                         <option>{{$book->PublishingHouse->publishingHouseName}}</option>
                                     </option>
                                  </select>
                               </div>
+  @endforeach
+                   @endif
 
-
-
+@method('PUT')
                               <button type="submit" class="btn btn-primary">Submit</button>
                               <button type="reset" class="btn btn-danger">Reset</button>
                            </form>

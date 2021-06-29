@@ -21,7 +21,7 @@ class CreateBooksTable extends Migration
         Schema::create('books', function (Blueprint $table) {
             $table->engine = 'InnoDB';
 
-            $table->increments('id');
+            $table->id();
             $table->string('name');
             $table->string('isbn')->unique();
             $table->date('releaseYear');

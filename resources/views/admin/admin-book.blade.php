@@ -30,6 +30,7 @@ Version: 1.0
 </head>
 
 <body>
+
 <!--Header Start-->
 <div class="header_top_wrapper">
 	<div class="container">
@@ -96,16 +97,17 @@ Version: 1.0
 	</div>
 </div>
 <!--Content start-->
+
 <div class="analyze_book_page">
 	<div class="container">
 		<div class="row">
 
 			<div class="book_maindiv">
-
+@include('include.massege')
  @if(count($books) > 0)
                              @foreach($books as $bookss)
-                                
-                                                       
+
+
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="book_images">
 						<img src="{{ asset('customer/images/books/b1.jpg') }}" alt="" />
@@ -116,28 +118,30 @@ Version: 1.0
 						</div>
 						<div class="book_text">
 							<h3><a href="book_inside.html">{{$bookss->name}}</a></h3>
-<a  data-toggle="tooltip" data-placement="top" title="" name="edit-category"  data-original-title="Edit" href="{{ url('/book/edit/'.$bookss->id) }}">Edit</a>
-<a  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="{{ url('/book/delete/'.$bookss->id) }}">Delete</a>
-     
+
 							<span>
-                          
+
                          {{$bookss->author->name}}
                             <p >
-                           {{$bookss->PublishingHouse->publishingHouseName}}</p></span> 
+                           {{$bookss->PublishingHouse->publishingHouseName}}</p></span>
 						   {{$bookss->releaseYear}}
 					       {{$bookss->Categorie->name}}
+                           <br/>
+<a  data-toggle="tooltip" data-placement="top" title="" name="edit-category"  data-original-title="Edit" href="{{ url('/book/edit/'.$bookss->id) }}">Edit</a>
+<a  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="{{ url('/book/delete/'.$bookss->id) }}">Delete</a>
+
                         </div>
 
 					</div>
 
 
 				</div>
-                     
+
                @endforeach
                    @endif
               </div>
-               	
-          
+
+
 				<div class="gallery_pagination">
 					<ul>
 						<li><a href="#" class="previous">Previous</a></li>
