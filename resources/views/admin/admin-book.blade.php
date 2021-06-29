@@ -67,9 +67,11 @@ Version: 1.0
 			<div class="col-lg-3 col-md-5 col-sm-5">
 				<div class="search_btn">
 					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search">
+                    <form method="POST" action="{{ action('controlController@searchmethod') }}">
+						<input type="hidden" name=""
+                        <input type="text" name="search" class="form-control" placeholder="Search">
 						<span class="input-group-btn">
-						<button class="btn btn-default" type="button">search</button>
+						<button type="submit" class="btn btn-default" type="button">search</button>
 						</span>
 					</div>
 				</div>

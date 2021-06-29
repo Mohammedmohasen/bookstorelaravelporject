@@ -199,5 +199,21 @@ $PublishingHouse=PublishingHouse::all('id', 'publishingHouseName');
    ->with('Categorie',$Categorie)
    ->with('PublishingHouse',$PublishingHouse);
 }
+public function searchmethod($request)
+{
+     $this->validate($request, [
+    'search' => ['required', 'min:5'],
+     ]);
+     $author=new author();
+    $Categorie=new Categorie();
+    $PublishingHouse=new PublishingHouse();
 
+$author=author::all('id')->where('name',$request->name);
+$Categorie=Categorie::all('id')->where('name',$request->name);;
+$PublishingHouse=PublishingHouse::all('id')->where('publishingHouseName',$request->name);;
+   return  view('admin.admin-add-book')
+   ->with('author',$author)
+   ->with('Categorie',$Categorie)
+   ->with('PublishingHouse',$PublishingHouse);
+}
 }
