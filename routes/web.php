@@ -93,6 +93,13 @@ Route::get('/PublishingHouse/edit/{id}/','controlController@edit')->name('editPu
 
 Route::PUT('/{id}','controlController@update')->name('updatePublishingHouse');
 
+//edit book
+
+Route::get('/book/edit/{id}/','controlController@edit')->name('editbook');
+
+Route::PUT('/{id}','controlController@update')->name('updatebook');
+
+
 //dekete category
 
 Route::get('/category/delete/{id}/', 'controlController@destroy')->name('deleteCategory');
@@ -104,6 +111,10 @@ Route::get('/author/delete/{id}/','controlController@destroy')->name('deleteauth
 //delete publishing home
 
 Route::get('/PublishingHouse/delete/{id}/', 'controlController@destroy')->name('destroyPublishingHouse');
+
+//delete book 
+
+Route::get('/book/delete/{id}/','controlController@destroy')->name('deletebook');
 
 
 /////////////////////////////////////////// resource controller

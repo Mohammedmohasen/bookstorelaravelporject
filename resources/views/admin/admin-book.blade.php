@@ -116,7 +116,9 @@ Version: 1.0
 						</div>
 						<div class="book_text">
 							<h3><a href="book_inside.html">{{$bookss->name}}</a></h3>
-							
+<a  data-toggle="tooltip" data-placement="top" title="" name="edit-category"  data-original-title="Edit" href="{{ url('/book/edit/'.$bookss->id) }}">Edit</a>
+<a  data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="{{ url('/book/delete/'.$bookss->id) }}">Delete</a>
+     
 							<span>
                           
                          {{$bookss->author->name}}

@@ -122,6 +122,9 @@ elseif(strpos($url, 'author') !== false) {
 }elseif(strpos($url, 'PublishingHouse') !== false)
 {
     return app('App\Http\Controllers\admin\publishingController')->edit($id);
+}elseif(strpos($url, 'book') !== false)
+{
+    return app('App\Http\Controllers\admin\booksController')->edit($id);
 }
 }
 
@@ -153,7 +156,9 @@ elseif(strpos($url, 'author') !== false) {
         case 'edit-publishing-house':
                return  app('App\Http\Controllers\admin\publishingController')->update($request, $id);
         break;
-
+case 'edit-book':
+               return  app('App\Http\Controllers\admin\booksController')->update($request, $id);
+        break;
     }
     }
     /**
@@ -174,6 +179,9 @@ elseif(strpos($url, 'author') !== false) {
       }elseif(strpos($url, 'PublishingHouse') !== false)
 {
     return app('App\Http\Controllers\admin\publishingController')->destroy($id);
+}elseif(strpos($url, 'PublishingHouse') !== false)
+{
+    return app('App\Http\Controllers\admin\booksController')->destroy($id);
 }
     }
 ///CUSTOM METHOID USE FOR SPACIFEC THINKS

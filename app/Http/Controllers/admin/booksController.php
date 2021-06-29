@@ -79,7 +79,9 @@ return redirect()->back()->with('success', 'succes create book : ' .  $request->
      */
     public function edit($id)
     {
-        //
+    $books = books::find($id);
+return view('admin.admin-edit-author')->with('books', $books);
+
     }
 
     /**
