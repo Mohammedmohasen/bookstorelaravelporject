@@ -36,7 +36,7 @@ class categoriesController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-    'name' => ['required', 'min:5', 'max:20'],
+    'name' => ['required', 'min:5', 'max:20','unique:categories'],
     'Describe' => ['required','min:5'],
 ]);
 
@@ -83,6 +83,12 @@ return redirect()->back()->with('success', 'succes create Categorie : ' . $reque
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+    'name' => ['required', 'min:5', 'max:20', 'unique:categories'],
+    'Describe' => ['required', 'min:5'],
+]);
+
+
         $Categorie = Categorie::find($id);
         $categorynam=$Categorie->name;
        $Categorie->name = $request->input('name');

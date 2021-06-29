@@ -87,7 +87,7 @@ class authorController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-    'Email' => ['required', 'min:8', 'email','|exists:author'],
+   'Email' => ['required', 'min:8', 'email','unique:authors']
 ]);
 
           $author = author::find($id);

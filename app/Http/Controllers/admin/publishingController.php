@@ -84,6 +84,10 @@ return view('admin.admin-edit-publishing-home')->with('PublishingHouse', $Publis
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+    'siteName' => ['required', 'url','unique:publishing_houses'],
+]);
+
   $PublishingHouse = PublishingHouse::find($id);
 $PublishingHouse->siteName = $request->input('siteName');
 $PublishingHouse->save();

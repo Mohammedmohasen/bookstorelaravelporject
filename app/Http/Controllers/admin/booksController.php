@@ -93,6 +93,10 @@ return view('admin.admin-edit-book')->with('books', $books);
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+    'NAME' => ['required', 'min:5', 'max:20'],
+]);
+
         $books = books::find($id);
         $bookname=$books->name;
      $books->name=$request->input('NAME');
