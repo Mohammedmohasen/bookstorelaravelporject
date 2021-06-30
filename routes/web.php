@@ -16,9 +16,9 @@ use App\Http\Controller\controlController;
 */
 //get route we are put it here for more regular code and the right thing in the laravel put the  gt code before the resource route
 //test side
-Route::get('test', function () {
+Route::get('dashboard', function () {
    return view('admin.admin-dashboard');
-});
+})->name('dashboard');
 //login route
 
 Route::get('/login', 'controlController@index')->name('login');
@@ -112,7 +112,7 @@ Route::get('/author/delete/{id}/','controlController@destroy')->name('deleteauth
 
 Route::get('/PublishingHouse/delete/{id}/', 'controlController@destroy')->name('destroyPublishingHouse');
 
-//delete book 
+//delete book
 
 Route::get('/book/delete/{id}/','controlController@destroy')->name('deletebook');
 

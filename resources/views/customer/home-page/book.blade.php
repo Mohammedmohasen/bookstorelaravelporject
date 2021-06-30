@@ -55,20 +55,14 @@ Version: 1.0
 				<div class="analyze_nav_wrapper">
 					<ul>
 
-						<li><a href="gallery.html">dashboard</a></li>
-						<li><a href="{{ route('add-author') }}">add author</a></li>
-						<li><a href="{{ route('add-category') }}">add category</a></li>
-						<li ><a href="{{ route('add-BOOKS') }}">add books</a></li>
-						<li><a href="{{ route('add-publishing-house') }}">add PublishingHouse</a></li>
+
 
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-5 col-sm-5">
 				<div class="search_btn">
 					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search">
-						<span class="input-group-btn">
-						<button class="btn btn-default" type="button">search</button>
+					@include('include.searchcode')
 						</span>
 					</div>
 				</div>
@@ -104,8 +98,8 @@ Version: 1.0
 
  @if(count($books) > 0)
                              @foreach($books as $bookss)
-                                
-                                                       
+
+
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="book_images">
 						<img src="{{ asset('customer/images/books/b1.jpg') }}" alt="" />
@@ -117,11 +111,11 @@ Version: 1.0
 						<div class="book_text">
 							<h3><a href="book_inside.html">{{$bookss->name}}</a></h3>
 							<span>
-                          
+
                          {{$bookss->author->name}}
                             <p >
-                       
-                           {{$bookss->PublishingHouse->publishingHouseName}}</p></span> 
+
+                           {{$bookss->PublishingHouse->publishingHouseName}}</p></span>
 						   {{$bookss->releaseYear}}
 					       {{$bookss->Categorie->name}}
                         </div>
@@ -130,12 +124,12 @@ Version: 1.0
 
 
 				</div>
-                     
+
                @endforeach
                    @endif
               </div>
-               	
-          
+
+
 				<div class="gallery_pagination">
 					<ul>
 						<li><a href="#" class="previous">Previous</a></li>

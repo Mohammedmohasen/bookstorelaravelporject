@@ -9,7 +9,7 @@ use App\Models\admin\Categorie;
 use App\Models\admin\PublishingHouse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use DB;
 class controlController extends Controller
 {
     /**
@@ -44,7 +44,7 @@ class controlController extends Controller
             case $http . 'publishing':
                 return app('App\Http\Controllers\admin\publishingController')->showall();
             default:
-                return view('login.pages-login');
+                return view('customer.book');
                 break;
         }
     }
@@ -89,7 +89,7 @@ class controlController extends Controller
                 return app('App\Http\Controllers\admin\booksController')->store($request);
                 break;
             case 'searchbox':
-
+              return $this->searchmethod($request);
             default:
 
                 break;
@@ -193,24 +193,52 @@ class controlController extends Controller
         $this->validate($request, [
             'search' => ['required', 'min:5'],
         ]);
+        /*
         $author = new author();
         $Categorie = new Categorie();
         $PublishingHouse = new PublishingHouse();
         $books = new books();
-        $Categorie = Categorie::all('id')->where('name', $request->search);
-        $author = author::all('id')->where('name', $request->search);
-        $PublishingHouse = PublishingHouse::all('id')->where('publishingHouseName', $request->search);
-        $books = books::all()
-            ->where('categoriesId', $Categorie)
+
+
+
+        $Categorie= Categorie::where('name', $request->search)
+         ->pluck('id')
+         ->all();
+
+
+           $author= author::where('name', $request->search)
+         ->pluck('id')
+         ->all();
+
+
+        $PublishingHouse= PublishingHouse::where('publishingHouseName', $request->search)
+         ->pluck('id')
+         ->all();
+
+        $books = books::
+          where('categoriesId', $Categorie)
             ->where('publishingHousesId', $PublishingHouse)
             ->where('authorId', $author)
-            ->with('author')
+           ->with('author')
             ->with('Categorie')
             ->with('PublishingHouse')
             ->select('*')
             ->get();
-        //dd( $books);
-        return view('admin.admin-book')->with('books', $books);
+*/
+
+
+$books=books::with('author')
+->with('Categorie')
+->with('PublishingHouse')
+->where('name',$request->search)
+->select('*')
+->get();
+
+
+
+
+     return view('admin.admin-book')->with('books', $books);
+
 
     }
 }

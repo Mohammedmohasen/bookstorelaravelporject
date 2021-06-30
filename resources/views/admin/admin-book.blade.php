@@ -56,7 +56,7 @@ Version: 1.0
 				<div class="analyze_nav_wrapper">
 					<ul>
 
-						<li><a href="gallery.html">dashboard</a></li>
+						<li><a href="{{ route('dashboard')}}">dashboard</a></li>
 						<li><a href="{{ route('add-author') }}">add author</a></li>
 						<li><a href="{{ route('add-category') }}">add category</a></li>
 						<li ><a href="{{ route('add-BOOKS') }}">add books</a></li>
@@ -67,11 +67,7 @@ Version: 1.0
 			<div class="col-lg-3 col-md-5 col-sm-5">
 				<div class="search_btn">
 					<div class="input-group">
-                    <form method="POST" action="{{ action('controlController@store') }}">
-						<input type="hidden" name="requestName" value="searchbox"/>
-                        <input type="text" name="search" class="form-control" placeholder="Search">
-						<span class="input-group-btn">
-						<button type="submit" class="btn btn-default" type="button">search</button>
+                    @include('include.searchcode')
 						</span>
 					</div>
 				</div>
@@ -90,8 +86,8 @@ Version: 1.0
 			<div class="col-lg-4 col-md-4 col-sm-4">
 				<div class="analyze_breadcrumb">
 					<ul>
-						<li><a href="index.html">home</a></li>
-						<li><a href="book.html">books</a></li>
+						<li><a href="">home</a></li>
+
 					</ul>
 				</div>
 			</div>
