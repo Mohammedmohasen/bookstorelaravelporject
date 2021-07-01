@@ -44,7 +44,7 @@ class controlController extends Controller
             case $http . 'publishing':
                 return app('App\Http\Controllers\admin\publishingController')->showall();
             default:
-                return view('customer.book');
+                return view('customer.home-page.book');
                 break;
         }
     }
